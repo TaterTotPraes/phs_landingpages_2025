@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>[LOCATION_NAME] - Emergency Medical Services | Praesum Healthcare</title>
+    <meta name="description" content="[LOCATION_SPECIFIC_DESCRIPTION]">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="[CANONICAL_URL_FOR_THIS_PAGE]">
+    
+    <meta property="og:title" content="[LOCATION_NAME] - Immediate Help Available">
+    <meta property="og:description" content="[LOCATION_SPECIFIC_DESCRIPTION]">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[CANONICAL_URL_FOR_THIS_PAGE]">
+    <meta property="og:image" content="[HERO_IMAGE_URL_JPG_FALLBACK]">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="[LOCATION_NAME] - Call Now">
+    <meta name="twitter:description" content="[LOCATION_SPECIFIC_DESCRIPTION]">
+    <meta name="twitter:image" content="[HERO_IMAGE_URL_JPG_FALLBACK]">
+
+    <link rel="icon" type="image/png" href="/images/favicon.png"> 
+
+    <style>
+        /* CSS Variables - Easy Branding Swap */
+        :root {
+            --color-primary: #0D1940; /* Navy - Header, Footer, Text */
+            --color-accent-cta: #D93644; /* Red - Primary CTA */
+            --color-accent-secondary: #F2949C; /* Light Pink - Hover */
+            --color-light-gray: #F2F2F2; /* Backgrounds */
+            --color-white: #FFFFFF;
+            --font-stack: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --header-height: 64px;
+        }
+
+        /* Base Reset & Typography */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: var(--font-stack); 
+            line-height: 1.6; 
+            color: var(--color-primary); 
+            background-color: var(--color-white);
+            min-height: 100vh; /* Prevents scrollbar on empty page */
+        }
+
+        /* Headings & Text Base */
+        h1, h2, h3 { line-height: 1.2; margin-bottom: 0.5em; }
+        p, li { font-size: 1.125rem; /* Min 18px body text for readability */ }
+        a { text-decoration: none; color: var(--color-accent-cta); }
+        a:hover, a:focus { color: var(--color-primary); }
+        
+        /* Utility Classes */
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 1rem;
+        }
+        
+        /* Buttons & CTAs */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            min-height: 44px; /* Touch-friendly requirement */
+            min-width: 140px;
+            font-size: 1rem;
+            font-weight: 700;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            border: none;
+        }
+        .btn-primary {
+            background-color: var(--color-accent-cta);
+            color: var(--color-white);
+            box-shadow: 0 4px 12px rgba(217, 54, 68, 0.4);
+        }
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: var(--color-accent-secondary);
+            color: var(--color-primary);
+        }
+
+        /* HEADER (Above the Fold) */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--header-height);
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            padding: 0 1rem;
+        }
+        .logo a {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--color-white);
+        }
+        .nav-menu { display: none; } /* Hidden on Mobile initially */
+
+        /* Mobile CTA Button (Always Visible) */
+        .header-cta-mobile {
+            background-color: var(--color-accent-cta);
+            color: var(--color-white);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 600;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* HERO SECTION (Above the Fold) */
+        .hero {
+            padding-top: var(--header-height); /* Offset for sticky header */
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            color: var(--color-white); /* Default text color over dark overlay */
+        }
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: #333; /* Fallback */
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(13, 25, 64, 0.7); /* Dark overlay using primary color */
+        }
+        .hero-content {
+            padding: 2rem 1rem;
+            max-width: 800px;
+            z-index: 10;
+        }
+        .hero-tagline {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            background: rgba(217, 54, 68, 0.9); /* Accent background */
+            display: inline-block;
+            border-radius: 4px;
+        }
+        .hero h1 {
+            font-size: 2rem; /* Mobile H1 */
+            margin-bottom: 0.5rem;
+            color: var(--color-white);
+        }
+        .hero p {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        /* INFO CARDS (Above the Fold on Mobile) */
+        .info-cards {
+            padding: 2rem 0;
+            background-color: var(--color-light-gray);
+        }
+        .cards-grid {
+            display: flex;
+            flex-direction: column; /* Stacked on Mobile */
+            gap: 1.5rem;
+        }
+        .card {
+            background-color: var(--color-white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+        .card-address {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+        .card-location-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .card-location-list li {
+            font-size: 0.9rem;
+            background-color: var(--color-light-gray);
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            color: var(--color-primary);
+            cursor: pointer;
+        }
+
+        /* Only include styles for above-the-fold content here. 
+           Desktop and sections below the fold go into style.css. 
+           --- Mobile-first adjustments for small screens --- */
+        @media (min-width: 768px) {
+            .hero h1 { font-size: 3rem; }
+            .hero-tagline { font-size: 1.125rem; }
+            .cards-grid { flex-direction: row; }
+        }
+        
+        /* End of Critical CSS */
+    </style>
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Praesum Healthcare - [LOCATION_NAME]",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[STREET_ADDRESS]",
+        "addressLocality": "[CITY]",
+        "addressRegion": "[STATE]",
+        "postalCode": "[ZIP_CODE]",
+        "addressCountry": "US"
+      },
+      "url": "[CANONICAL_URL_FOR_THIS_PAGE]",
+      "telephone": "[PHONE_NUMBER]",
+      "image": "[HERO_IMAGE_URL_JPG_FALLBACK]",
+      "priceRange": "$$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "[LATITUDE]",
+        "longitude": "[LONGITUDE]"
+      }
+    }
+    </script>
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','[GTM_CONTAINER_ID]');</script>
+    </head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=[GTM_CONTAINER_ID]"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header>
+        <div class="nav-content container">
+            <div class="logo">
+                <a href="#top">Sunrise Detox</a> </div>
+            
+            <a href="tel:[PHONE_NUMBER_CLICK_TO_CALL]" class="header-cta-mobile btn" role="button" aria-label="Call 24/7 Helpline">
+                Call 1-800-XXX-XXXX
+            </a>
+            
+            <nav class="nav-menu" aria-label="Location Navigation">
+                <a href="#services">Amenities</a>
+                <a href="#insurance">Insurance Accepted</a>
+                <a href="#contact">Treatment Planning</a>
+            </nav>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation-menu" aria-label="Toggle navigation">
+                </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('[HERO_IMAGE_URL_JPG_FALLBACK]');" aria-label="Immediate care available">
+            <div class="hero-background" style="background-image: url('[HERO_IMAGE_URL_WEBP]');"></div> 
+            <div class="hero-content">
+                <h3 class="hero-tagline">
+                    Call Our Help Center Now. Available 24/7/365 to Get You The Help You Need
+                </h3>
+                
+                <h1>[LOCATION_NAME]</h1> 
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, fugiat odio ipsum corporis vitae.
+                    </p>
+                
+                <a href="#contact" class="btn btn-primary" role="button">
+                    Request Service
+                </a>
+            </div>
+        </section>
+
+        <section class="info-cards">
+            <div class="container cards-grid">
+                
+                <article class="card">
+                    <h3>Our Location</h3>
+                    <p class="card-address">
+                        [STREET_ADDRESS], [CITY], [STATE] [ZIP_CODE]
+                    </p>
+                    <p class="card-address">
+                        **Hours:** Mon–Sun: 24/7
+                    </p>
+                    <a href="https://maps.google.com/?q=[LATITUDE],[LONGITUDE]" target="_blank" rel="noopener noreferrer" aria-label="Get directions to our facility">
+                        Get Directions
+                    </a>
+                </article>
+
+                <article class="card">
+                    <h3>View Map</h3>
+                    <img class="lazy-load" data-src="[MAP_PREVIEW_IMAGE_URL]" alt="Preview map of [LOCATION_NAME] area" width="100%" height="auto" loading="lazy">
+                    <p style="margin-top: 1rem; text-align: center;">
+                        <a href="#map-embed" aria-label="View large embedded Google Map">
+                            View Larger Map
+                        </a>
+                    </p>
+                </article>
+
+                <article class="card btn-primary" style="background-color: var(--color-accent-cta); color: var(--color-white);">
+                    <h3>See All Our Locations</h3>
+                    <ul class="card-location-list">
+                        <li>Houston</li>
+                        <li>Palm Beach</li>
+                        <li>Miami</li>
+                        <li>Orlando</li>
+                        <li>Nashville</li>
+                        <li>Chicago</li>
+                        <li>Seattle</li>
+                        <li>+ 5 more</li>
+                    </ul>
+                    <a href="#" style="color: var(--color-white); font-weight: 700; margin-top: 1rem; display: block;" aria-label="View list of all Praesum Healthcare locations">
+                        Find a Location Near You &rarr;
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="services" class="section-padded" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading" class="text-center">Key Amenities & Services</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, nam?</p>
+                </div>
+        </section>
+        
+        <section id="contact" class="section-padded bg-light-gray" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="text-center">Contact & Directions</h2>
+                
+                <div id="map-embed" class="map-embed-wrapper lazy-load" style="height: 400px; margin-bottom: 2rem;" data-html="[GOOGLE_MAPS_EMBED_CODE]">
+                    <p class="text-center">Loading map...</p>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <h3>Send Us a Confidential Message</h3>
+                    <form id="contact-form" action="[FORMSPREE_OR_SERVER_ENDPOINT]" method="POST">
+                        </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <div class="container">
+            <nav class="footer-nav" aria-label="Footer Navigation">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#services">Amenities</a>
+                <a href="#">Contact</a>
+            </nav>
+            <p class="copyright">&copy; <span id="current-year">2024</span> Praesum Healthcare. All Rights Reserved.</p>
+            <div class="social-links">
+                </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script> 
+</body>
+</html>
