@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "name": "Evolve Recovery Center",
+    "alternateName": "Evolve",
+    "description": "In-Patient Alcohol and Drug Rehab, Accepting Most Commercial and Government Insurance Carriers and Free Placement Assistance.",
+    "url": "https://www.evolverecoverycenter.com",
+    "logo": "https://www.evolverecoverycenter.com/images/Evolve_Logo.png",
+    "telephone": "888-369-7727",
+    "email": "[MAIN_CONTACT_EMAIL@evolverecoverycenter.com]",
+    "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+    "gtm_id": "GTM-KQZ36PJ8",
+    "e_e_a_t_statement": "We are committed to helping all patients find the care they need, even if it's not with us. We do not accept referral payments or commissions.",
+    "social_links": {
+      "facebook": "[EVOLVE_FACEBOOK_URL]",
+      "instagram": "[EVOLVE_INSTAGRAM_URL]"
+    },
+    "hasMap": "https://www.evolverecoverycenter.com/#locations-full"
+  },
+  "locations": [
+    {
+      "name": "Evolve Recovery Center at Duluth",
+      "url": "https://www.evolverecoverycenter.com/duluth_georgia",
+      "image": "https://www.evolverecoverycenter.com/images/evolve_duluth.webp",
+      "telephone": "888-369-7727",
+      "streetAddress": "3390 N Berkeley Lake Rd, Suite B",
+      "addressLocality": "Duluth",
+      "addressRegion": "GA",
+      "postalCode": "30096",
+      "addressCountry": "US",
+      "latitude": "33.98534255",
+      "longitude": "-84.16978043",
+      "gmb_link": "[LOCATION_GMB_URL]",
+      "gmb_embed_url": "[LOCATION_GMB_EMBED_URL]",
+      "areasServed": {
+        "cities": ["Johns Creek", "Peachtree Corners", "Suwanee", "Greater Atlanta Metro"],
+        "zips": ["30096", "30097", "30095", "30098", "30099", "30024", "30071", "30044", "30043", "30004", "30005", "30022"]
+      },
+      "insuranceList": [
+        "Ambetter",
+        "Cigna Connect"
+      ],
+      "medicalSpecialty": ["AddictionMedicine"],
+      "availableService": [
+        "Inpatient Rehabilitation", "Residential Addiction Treatment", "Relapse Prevention", "Group Therapy", "Individual Therapy", "Co-Occurring Disorder Treatment"
+      ]
+    },
+    {
+      "name": "Evolve Recovery Center at Millbury",
+      "url": "https://www.evolverecoverycenter.com/millbury_massachusetts",
+      "image": "https://www.evolverecoverycenter.com/images/evolve_millbury.webp",
+      "telephone": "+1-508-876-3223",
+      "streetAddress": "29 Main Street",
+      "addressLocality": "Millbury",
+      "addressRegion": "MA",
+      "postalCode": "01527-2005",
+      "addressCountry": "US",
+      "latitude": "42.1931331",
+      "longitude": "-71.76188758",
+      "gmb_link": "[LOCATION_GMB_URL]",
+      "gmb_embed_url": "[LOCATION_GMB_EMBED_URL]",
+      "areasServed": {
+        "cities": ["Auburn", "Grafton", "Sutton", "Shrewsbury", "Greater Worcester Metro"],
+        "zips": ["01527", "01586", "01602", "01603", "01604", "01605", "01606", "01607", "01608", "01609", "01610", "01501", "01519", "01581", "01545"]
+      },
+      "insuranceList": [
+        "BCBS",
+        "HMC Healthworks",
+        "Harvard Pilgrim/Point 32",
+        "Magellan",
+        "Tricare (Humana Military)",
+        "Tufts (Medicaid)"
+      ],
+      "medicalSpecialty": ["AddictionMedicine"],
+      "availableService": [
+        "Inpatient Rehabilitation", "Residential Addiction Treatment", "Relapse Prevention", "Group Therapy", "Individual Therapy", "Co-Occurring Disorder Treatment"
+      ]
+    },
+    {
+      "name": "Evolve Recovery Center at Stirling",
+      "url": "https://www.evolverecoverycenter.com/stirling_newjersey",
+      "image": "https://www.evolverecoverycenter.com/images/evolve_tomsriver.webp",
+      "telephone": "+1-908-502-2700",
+      "streetAddress": "1272 Longhill Road",
+      "addressLocality": "Stirling",
+      "addressRegion": "NJ",
+      "postalCode": "07980-1010",
+      "addressCountry": "US",
+      "latitude": "40.680696",
+      "longitude": "-74.497406",
+      "gmb_link": "[LOCATION_GMB_URL]",
+      "gmb_embed_url": "[LOCATION_GMB_EMBED_URL]",
+       "areasServed": {
+        "cities": ["Berkeley Heights", "Chatham", "Morristown", "Summit", "Basking Ridge"],
+        "zips": ["07980", "07922", "07928", "07960", "07901", "07920"]
+      },
+      "insuranceList": [
+        "Aetna",
+        "AmeriHealth",
+        "BCBS Horizon",
+        "Magellan",
+        "Tricare (Humana Military)"
+      ],
+      "medicalSpecialty": ["AddictionMedicine"],
+      "availableService": [
+        "Inpatient Rehabilitation", "Residential Addiction Treatment", "Relapse Prevention", "Group Therapy", "Individual Therapy", "Co-Occurring Disorder Treatment"
+      ]
+    },
+    {
+      "name": "Evolve Recovery Center at Toms River",
+      "url": "https://www.evolverecoverycenter.com/tomsriver_newjersey",
+      "image": "https://www.evolverecoverycenter.com/images/evolve_tomsriver.webp",
+      "telephone": "888-369-7727",
+      "streetAddress": "16 Whitesville Road Suite C",
+      "addressLocality": "Toms River",
+      "addressRegion": "NJ",
+      "postalCode": "08753-4107",
+      "addressCountry": "US",
+      "latitude": "39.982367",
+      "longitude": "-74.21030985",
+      "gmb_link": "[LOCATION_GMB_URL]",
+      "gmb_embed_url": "[LOCATION_GMB_EMBED_URL]",
+      "areasServed": {
+        "cities": ["Brick", "Lakewood", "Seaside Heights", "Berkeley", "Ocean County"],
+        "zips": ["08753", "08754", "08755", "08756", "08757", "08701", "08723", "08724", "08721", "08751", "08731", "08722"]
+      },
+      "insuranceList": [
+        "Aetna",
+        "AmeriHealth",
+        "BCBS Horizon",
+        "Magellan",
+        "Tricare (Humana Military)"
+      ],
+      "medicalSpecialty": ["AddictionMedicine"],
+      "availableService": [
+        "Inpatient Rehabilitation", "Residential Addiction Treatment", "Relapse Prevention", "Group Therapy", "Individual Therapy", "Co-Occurring Disorder Treatment"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "brand": {
+    "name": "The Counseling Center",
+    "alternateName": "Counseling",
+    "description": "Personal Out-Patient Counseling for Addiction and Mental Health, Accepting Most Commercial and Government Insurance Carriers and Free Placement Assistance.",
+    "url": "https://www.thecounselingcenter.com",
+    "logo": "https://www.thecounselingcenter.com/images/TCC_Logo.png",
+    "telephone": "866-850-5001",
+    "email": "[MAIN_CONTACT_EMAIL@thecounselingcenter.com]",
+    "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+    "gtm_id": "GTM-PL84BFQL",
+    "e_e_a_t_statement": "We are committed to helping all patients find the care they need, even if it's not with us. We do not accept referral payments or commissions.",
+    "social_links": {
+      "facebook": "[TCC_FACEBOOK_URL]",
+      "instagram": "[TCC_INSTAGRAM_URL]"
+    },
+    "hasMap": "https://www.thecounselingcenter.com/#locations-full"
+  },
+  "locations": [
+    {
+      "name": "The Counseling Center at Middlesex",
+      "url": "https://www.thecounselingcenter.com/middlesex_newjersey",
+      "image": "https://www.thecounselingcenter.com/images/TCCMiddlesex-857.jpg",
+      "telephone": "+1-732-893-2000",
+      "streetAddress": "127 Union Ave Suite 1",
+      "addressLocality": "Middlesex",
+      "addressRegion": "NJ",
+      "postalCode": "08846-1039",
+      "addressCountry": "US",
+      "latitude": "40.56724265",
+      "longitude": "-74.52264436",
+      "gmb_link": "https://maps.app.goo.gl/2FAwe1dDerd75gWw5",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.8268996683655!2d-74.5225147!3d40.567499700000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c39557252a746b%3A0x201e6f3764ca8874!2sThe%20Counseling%20Center%20at%20Middlesex!5e0!3m2!1sen!2sus!4v1762035228592!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["Middlesex", "Dunellen", "South Plainfield", "Piscataway", "Edison", "South Brunswick"],
+        "zips": ["08846", "08812", "08817", "08820", "08837", "08854", "08873", "08875", "08901"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    },
+    {
+      "name": "The Counseling Center at Robbinsville",
+      "url": "https://www.thecounselingcenter.com/robbinsville_newjersey",
+      "image": "https://www.thecounselingcenter.com/images/TCCRobbinsville-859.jpg",
+      "telephone": "+1-609-759-2070",
+      "streetAddress": "691 US-130 N",
+      "addressLocality": "Robbinsville",
+      "addressRegion": "NJ",
+      "postalCode": "08691-2207",
+      "addressCountry": "US",
+      "latitude": "40.215685",
+      "longitude": "-74.620602",
+      "gmb_link": "https://maps.app.goo.gl/XqgPWnJfnrgsAjd87",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.8003129924464!2d-74.647454!3d40.191257199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c15fd7d7a57ddf%3A0x3101f59cc435889e!2sThe%20Counseling%20Center%20at%20Robbinsville!5e0!3m2!1sen!2sus!4v1762035252967!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["Robbinsville", "Hamilton", "Trenton", "East Windsor", "West Windsor"],
+        "zips": ["08691", "08520", "08540", "08550", "08601", "08609", "08610", "08611", "08619", "08690"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    },
+    {
+      "name": "The Counseling Center at Duluth",
+      "url": "https://www.thecounselingcenter.com/duluth_georgia",
+      "image": "https://www.thecounselingcenter.com/images/DuluthTCCthumbnail-865.jpg",
+      "telephone": "+1-470-704-5010",
+      "streetAddress": "4191 Pleasant Hill Road Suite 100",
+      "addressLocality": "Duluth",
+      "addressRegion": "GA",
+      "postalCode": "30096-1411",
+      "addressCountry": "US",
+      "latitude": "34.00459153",
+      "longitude": "-84.16973242",
+      "gmb_link": "https://maps.app.goo.gl/zXyqDZJfVFpBASYe6",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.5791688444665!2d-84.1729998!3d34.0033416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a3522f8cd19d%3A0x5402ab145d0debf9!2sThe%20Counseling%20Center%20at%20Duluth!5e0!3m2!1sen!2sus!4v1762035269078!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["Duluth", "Lawrenceville", "Suwanee", "Norcross", "Lilburn", "Peachtree Corners"],
+        "zips": ["30096", "30097", "30095", "30098", "30099", "30043", "30044", "30024", "30071"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    },
+    {
+      "name": "The Counseling Center at Millbury",
+      "url": "https://www.thecounselingcenter.com/millbury_massachusetts",
+      "image": "https://www.thecounselingcenter.com/images/TCCMillbury.jpg",
+      "telephone": "+1-201-389-5326",
+      "streetAddress": "29 Main Street",
+      "addressLocality": "Millbury",
+      "addressRegion": "MA",
+      "postalCode": "01527-2005",
+      "addressCountry": "US",
+      "latitude": "42.1931331",
+      "longitude": "-71.76188758",
+      "gmb_link": "https://maps.app.goo.gl/GppEhpgjsXddWjwJ7",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.993480452876!2d-71.76161619999999!3d42.1932069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e40f480e4a458d%3A0xe9949d4e45d5d1ea!2sThe%20Counseling%20Center%20at%20Millbury!5e0!3m2!1sen!2sus!4v1762035289266!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["Millbury", "Auburn", "Grafton", "Sutton", "Northbridge", "Worcester"],
+        "zips": ["01527", "01586", "01602", "01603", "01604", "01605", "01606", "01607", "01501", "01519", "01536"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    },
+    {
+      "name": "The Counseling Center at Roswell",
+      "url": "https://www.thecounselingcenter.com/roswell_georgia",
+      "image": "https://www.thecounselingcenter.com/images/TCCRoswell-860.jpg",
+      "telephone": "+1-470-704-5080",
+      "streetAddress": "419 E. Crosville Road, Suite 105",
+      "addressLocality": "Roswell",
+      "addressRegion": "GA",
+      "postalCode": "30075-5807",
+      "addressCountry": "US",
+      "latitude": "34.038542",
+      "longitude": "-84.349968",
+      "gmb_link": "https://maps.app.goo.gl/ZaAratTTWKWB3Npx5",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.193671146257!2d-84.34981900000001!3d34.0389028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f575db57a1f84f%3A0xc6821d12d0f901f4!2sThe%20Counseling%20Center%20at%20Roswell!5e0!3m2!1sen!2sus!4v1762035302684!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["Roswell", "Alpharetta", "Milton", "Johns Creek", "Sandy Springs"],
+        "zips": ["30075", "30076", "30077", "30004", "30005", "30009", "30022", "30328", "30350"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    },
+    {
+      "name": "The Counseling Center at Roxbury-Succasunna",
+      "url": "https://www.thecounselingcenter.com/roxburytownship_newjersey",
+      "image": "https://www.thecounselingcenter.com/images/TCCRoxbury-861.jpg",
+      "telephone": "+1-732-893-2000",
+      "streetAddress": "66 Sunset Strip, Suite 302",
+      "addressLocality": "Roxbury Township",
+      "addressRegion": "NJ",
+      "postalCode": "07876-1362",
+      "addressCountry": "US",
+      "latitude": "40.8688572",
+      "longitude": "-74.64618322",
+      "gmb_link": "https://maps.app.goo.gl/V9dAwKKARtf3BKST7",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.135098655502!2d-74.64617319999999!3d40.86890929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c39faf80c9c76f%3A0x4f12d928abf22cdb!2sThe%20Counseling%20Center%20at%20Roxbury-Succasunna!5e0!3m2!1sen!2sus!4v1762035314636!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["Roxbury Township", "Succasunna", "Ledgewood", "Kenvil", "Randolph", "Mount Arlington"],
+        "zips": ["07876", "07850", "07852", "07869", "07801", "07836", "07856"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    },
+    {
+      "name": "The Counseling Center at West Caldwell",
+      "url": "https://www.thecounselingcenter.com/westcaldwell_newjersey",
+      "image": "https://www.thecounselingcenter.com/images/TCCWestCaldwell-862.jpg",
+      "telephone": "+1-973-453-0808",
+      "streetAddress": "1120 Bloomfield Avenue, Suite 201",
+      "addressLocality": "West Caldwell",
+      "addressRegion": "NJ",
+      "postalCode": "07006-7131",
+      "addressCountry": "US",
+      "latitude": "40.85478381",
+      "longitude": "-74.30892579",
+      "gmb_link": "https://maps.app.goo.gl/4NnBD6MKUpJL2MWv8",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.8127797111397!2d-74.30939939999999!3d40.85403409999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3018399340eeb%3A0x89a39fe40db53053!2sThe%20Counseling%20Center%20at%20West%20Caldwell!5e0!3m2!1sen!2sus!4v1762035328626!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["West Caldwell", "Caldwell", "Cedar Grove", "Essex Fells", "Fairfield", "Montclair", "Verona"],
+        "zips": ["07006", "07004", "07007", "07009", "07021", "07028", "07039", "07042", "07043", "07044"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    },
+    {
+      "name": "The Counseling Center at Fair Lawn",
+      "url": "https://www.thecounselingcenter.com/fairlawn_newjersey",
+      "image": "https://www.thecounselingcenter.com/images/tccfairlawn-854.jpg",
+      "telephone": "+1-785-874-5244",
+      "streetAddress": "16-01 Broadway",
+      "addressLocality": "Fair Lawn",
+      "addressRegion": "NJ",
+      "postalCode": "07410-2026",
+      "addressCountry": "US",
+      "latitude": "40.921381",
+      "longitude": "-74.11807",
+      "gmb_link": "https://maps.app.goo.gl/5F2sJT1LFdvC5hbw7",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.74437675679!2d-74.11809989999999!3d40.9213504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fb8f4cc7ac41%3A0x9fcd85157067949!2sThe%20Counseling%20Center%20at%20Fair%20Lawn!5e0!3m2!1sen!2sus!4v1762035340585!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["Fair Lawn", "Paterson", "Glen Rock", "Ridgewood", "Paramus"],
+        "zips": ["07410", "07501", "07502", "07503", "07504", "07505", "07450", "07452", "07652", "07653"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    },
+    {
+      "name": "The Counseling Center at Freehold",
+      "url": "https://www.thecounselingcenter.com/freehold_newjersey",
+      "image": "https://www.thecounselingcenter.com/images/tccfreehold-856.jpg",
+      "telephone": "+1-732-431-5300",
+      "streetAddress": "4345 US Highway 9 North, Suite 28",
+      "addressLocality": "Freehold",
+      "addressRegion": "NJ",
+      "postalCode": "07728-4206",
+      "addressCountry": "US",
+      "latitude": "40.282981",
+      "longitude": "-74.293278",
+      "gmb_link": "https://maps.app.goo.gl/6pW9G7DbcXoUSnjF7",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.563404441586!2d-74.2932308!3d40.2854477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3d40a0a8ddcdf%3A0x1024121ed2c25809!2sThe%20Counseling%20Center%20At%20Freehold!5e0!3m2!1sen!2sus!4v1762035352061!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["Freehold", "Marlboro", "Manalapan", "Howell", "Old Bridge"],
+        "zips": ["07728", "07719", "07726", "07727", "07731", "07746", "07747", "07751", "07753"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    },
+    {
+      "name": "The Counseling Center at Toms River",
+      "url": "https://www.thecounselingcenter.com/tomsriver_newjersey",
+      "image": "https://www.thecounselingcenter.com/images/TCCTomsRiver-855.jpg",
+      "telephone": "+1-732-736-6559",
+      "streetAddress": "1198 Lakewood Road, Suite 101",
+      "addressLocality": "Toms River",
+      "addressRegion": "NJ",
+      "postalCode": "08753-2237",
+      "addressCountry": "US",
+      "latitude": "41.2775667",
+      "longitude": "-73.7776754",
+      "gmb_link": "https://maps.app.goo.gl/PiU4iFsf7iPzxvmd6",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.192091150043!2d-74.2107517!3d39.98181239999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c19d8f7e878511%3A0xf2b5b53175a177fa!2sThe%20Counseling%20Center%2BAt%2BToms%2BRiver%2C%2BNJ!5e0!3m2!1sen!2sus!4v1762035365271!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["Toms River", "Brick", "Lakewood", "Seaside Heights", "Point Pleasant"],
+        "zips": ["08753", "08754", "08755", "08756", "08757", "08701", "08721", "08722", "08723", "08724", "08742", "08751"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    },
+    {
+      "name": "The Counseling Center at Clark",
+      "url": "https://www.thecounselingcenter.com/clark_newjersey",
+      "image": "https://www.thecounselingcenter.com/images/ClarkCounselingCenterthumbnail-864.jpg",
+      "telephone": "+1-732-882-1920",
+      "streetAddress": "60 Walnut Ave, Suite 201",
+      "addressLocality": "Clark",
+      "addressRegion": "NJ",
+      "postalCode": "07066-1647",
+      "addressCountry": "US",
+      "latitude": "40.627978",
+      "longitude": "-74.301862",
+      "gmb_link": "https://maps.app.goo.gl/4gRe1z89g5cbYxxj8",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6056.139239024347!2d-74.3017955!3d40.6283466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b3db1651513d%3A0x1282b99d7dc0a8bb!2sThe%20Counseling%20Center%20at%20Clark!5e0!3m2!1sen!2sus!4v1762035377177!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["Clark", "Westfield", "Cranford", "Linden", "Rahway", "Woodbridge"],
+        "zips": ["07066", "07016", "07027", "07036", "07065", "07076", "07090"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    },
+    {
+      "name": "The Counseling Center at Cherry Hill",
+      "url": "https://www.thecounselingcenter.com/cherryhill_newjersey",
+      "image": "https://www.thecounselingcenter.com/images/TCCCherryHill.jpg",
+      "telephone": null,
+      "streetAddress": "950 N Kings Highway, Suite 304",
+      "addressLocality": "Cherry Hill",
+      "addressRegion": "NJ",
+      "postalCode": "08034-1518",
+      "addressCountry": "US",
+      "latitude": "39.92244535",
+      "longitude": "-75.00079836",
+      "gmb_link": "https://maps.app.goo.gl/8ckKo3LB9AxXVmVUA",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.78866353333!2d-75.0016899!3d39.923745399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6cb1fdc8b09b7%3A0xe5f201e1d4887634!2sThe%20Counseling%20Center%20at%20Cherry%20Hill!5e0!3m2!1sen!2sus!4v1762035388544!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["Cherry Hill", "Camden", "Pennsauken", "Maple Shade", "Marlton", "Collingswood"],
+        "zips": ["08034", "08002", "08003", "08101", "08102", "08103", "08104", "08105", "08108", "08109", "08110", "08052"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    },
+    {
+      "name": "The Counseling Center at Monmouth Junction",
+      "url": "https://www.thecounselingcenter.com/monmouthjunction_newjersey",
+      "image": "https://www.thecounselingcenter.com/images/TCCMonmouthJunction-858.jpg",
+      "telephone": "+1-732-893-2000",
+      "streetAddress": "1100 Cornwall Road, Suite 111",
+      "addressLocality": "Monmouth Junction",
+      "addressRegion": "NJ",
+      "postalCode": "08852-2411",
+      "addressCountry": "US",
+      "latitude": "40.416997",
+      "longitude": "-74.529716",
+      "gmb_link": "https://maps.app.goo.gl/tHygYpAxF1dzzTpS8",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6416146919955!2d-74.5300328!3d40.41678949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c31624101531%3A0xd54942cdc47e810a!2sThe%20Counseling%20Center%20at%20Monmouth%20Junction!5e0!3m2!1sen!2sus!4v1762035401194!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["Monmouth Junction", "South Brunswick", "Plainsboro", "Dayton", "New Brunswick"],
+        "zips": ["08852", "08540", "08810", "08816", "08823", "08824", "08901"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    },
+    {
+      "name": "The Counseling Center at Yorktown Heights",
+      "url": "https://www.thecounselingcenter.com/yorktownheights_newjersey",
+      "image": "https://www.thecounselingcenter.com/images/TCCYorktownHeights-863.jpg",
+      "telephone": "+1-914-977-0608",
+      "streetAddress": "2000 Maple Hill Street, Suite 101",
+      "addressLocality": "Yorktown Heights",
+      "addressRegion": "NY",
+      "postalCode": "10598-4122",
+      "addressCountry": "US",
+      "latitude": "41.2775667",
+      "longitude": "-73.7776754",
+      "gmb_link": "https://maps.app.goo.gl/2uuGsKr7XQ7UT8NZ6",
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.4382478118055!2d-73.7777065!3d41.277565599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2b6e221b362ff%3A0x7fae4d304238c365!2sThe%20Counseling%20Center%20at%20Yorktown%20Heights!5e0!3m2!1sen!2sus!4v1762035412784!5m2!1sen!2sus",
+      "areasServed": {
+        "cities": ["Yorktown Heights", "Cortlandt", "Mount Kisco", "Ossining", "Croton-on-Hudson"],
+        "zips": ["10598", "10502", "10511", "10520", "10521", "10547", "10549", "10562", "10566", "10567"]
+      },
+      "medicalSpecialty": ["Psychiatry", "Psychology", "AddictionMedicine"],
+      "availableService": [
+        "Intensive Outpatient Program (IOP)", "Partial Hospitalization Program (PHP)", "Outpatient Counseling", "Mental Health Treatment", "Co-Occurring Disorder Treatment", "Group Therapy", "Medication Management"
+      ]
+    }
+  ]
+}

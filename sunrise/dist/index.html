@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Sunrise Detox - Inpatient Medical Detox from Alcohol or Drugs</title>
+    <meta name="description" content="Immediate, confidential medical detox services for alcohol and drugs. Available 24/7/365 at 9 locations nationwide.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.sunrisedetox.com">
+    
+    <meta property="og:title" content="Sunrise Detox - Immediate Help Available: 866-989-4252">
+    <meta property="og:description" content="Immediate, confidential medical detox services for alcohol and drugs. Available 24/7/365 at 9 locations nationwide.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sunrisedetox.com">
+    <meta property="og:image" content="images/sunrise-detox-social.jpg">
+
+    <link rel="icon" type="image/png" href="images/sunrisedetoxlogo-favicon.png"> 
+
+    <style>
+        /* CSS Variables - Uses Sunrise Detox Color Palette */
+        :root {
+            --color-primary: #0D1940; /* Navy - Header, Footer, Text */
+            --color-accent-cta: #D93644; /* Red - Primary CTA */
+            --color-accent-secondary: #F2949C; /* Light Pink - Hover */
+            --color-light-gray: #F2F2F2; /* Backgrounds */
+            --color-white: #FFFFFF;
+            --font-stack: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --header-height: 64px;
+        }
+
+        /* Base Reset & Typography */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: var(--font-stack); 
+            line-height: 1.6; 
+            color: var(--color-primary); 
+            background-color: var(--color-white);
+            min-height: 100vh;
+        }
+        main {
+            padding-top: var(--header-height); /* Pushes ALL content down below the fixed header */
+        }
+        h1, h2, h3 { line-height: 1.2; margin-bottom: 0.5em; }
+        p, li { font-size: 1.125rem; }
+        a { text-decoration: none; color: var(--color-accent-cta); }
+        a:hover, a:focus { color: var(--color-primary); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+        
+        /* Utility */
+        .text-center { text-align: center; }
+        .bg-light-gray { background-color: var(--color-light-gray); }
+        .section-padded { padding: 4rem 0; }
+
+        /* Buttons & CTAs */
+        .btn {
+            display: inline-block; padding: 1rem 2rem; min-height: 44px; min-width: 140px;
+            font-size: 1rem; font-weight: 700; text-align: center; border-radius: 8px;
+            cursor: pointer; transition: background-color 0.3s, color 0.3s; border: none;
+        }
+        .btn-primary {
+            background-color: var(--color-accent-cta); color: var(--color-white);
+            box-shadow: 0 4px 12px rgba(217, 54, 68, 0.4);
+        }
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: var(--color-accent-secondary); color: var(--color-primary);
+        }
+
+        /* HEADER */
+        header {
+            position: fixed; top: 0; left: 0; width: 100%; height: var(--header-height);
+            background-color: var(--color-primary); color: var(--color-white); z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; height: 100%; padding: 0 1rem; }
+        .logo a { font-size: 1.5rem; font-weight: 800; color: var(--color-white); display: flex; align-items: center; }
+        .logo a img { max-height: 40px; margin-right: 10px; } 
+
+        .nav-menu { display: none; }
+        .header-cta-mobile {
+            background-color: var(--color-accent-cta); color: var(--color-white);
+            padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; min-height: 44px;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        /* NEW: ALERT BANNER */
+        .alert-banner {
+            background-color: var(--color-accent-cta);
+            color: var(--color-white);
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.9rem;
+            padding: 1rem;
+            line-height: 1.4;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            /* padding-top: var(--header-height); <-- REMOVED */
+            min-height: 70vh; display: flex;
+            align-items: center; position: relative; overflow: hidden; color: var(--color-white);
+        }
+        .hero-background {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+            background-color: #333; 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat; /* CRITICAL FIX */
+        }
+        .hero-background::after {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(13, 25, 64, 0.6); 
+        }
+        .hero-grid { 
+            display: grid; 
+            gap: 2rem; 
+            align-items: center; 
+            padding: 2rem 1rem; 
+            z-index: 10;
+        }
+        .hero-content-wrapper { 
+            background-color: rgba(13, 25, 64, 0.9); 
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            text-align: center; /* UPDATED */
+        }
+        .hero-tagline {
+            font-size: 1rem; font-weight: 600; margin-bottom: 1rem; padding: 0.5rem 1rem;
+            background: rgba(217, 54, 68, 0.9); display: inline-block; border-radius: 4px;
+        }
+       .hero h1 { 
+            font-size: 2.5rem; /* Increased size */
+            margin-bottom: 0.5rem; 
+            color: var(--color-white); 
+            text-align: center; /* Center the new headline */
+            text-transform: uppercase; /* All caps */
+        }
+        .hero p { font-size: 1.125rem; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.85); }
+        
+        /* NEW: Hero Locations List (H3) */
+        .hero-locations-pipe-list {
+            font-size: 1.125rem; /* h3 size */
+            font-weight: 500;
+            color: var(--color-accent-secondary);
+            text-align: center; /* CENTERED */
+            margin: 1.5rem 0;
+            line-height: 1.6;
+        }
+        .hero-locations-pipe-list span {
+            display: inline-block; /* Allows for proper pipe spacing */
+            white-space: nowrap;
+            padding: 0 0.25rem;
+        }
+        .hero-locations-pipe-list span:not(:last-child)::after {
+            content: '|';
+            margin-left: 1rem; /* Spacing for the pipe */
+            color: rgba(255, 255, 255, 0.5); /* Faded pipe color */
+        }
+        .hero-locations-pipe-list a {
+            color: var(--color-accent-secondary);
+            text-decoration: none;
+        }
+        .hero-locations-pipe-list a:hover {
+            color: var(--color-white);
+        }
+        /* End of Hero/Card styling */
+
+
+        /* NEW: Hero Brand Card (Right Column) */
+        .brand-card {
+            background-color: var(--color-white);
+            color: var(--color-primary);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .brand-card-logo {
+            background-color: var(--color-light-gray);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: -4rem auto 1rem; /* Pulls it up */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid var(--color-white);
+        }
+        .brand-card-logo img {
+            width: 80px; /* Set width to fit inside the 100px circle */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .brand-card h4 {
+            font-size: 1.75rem;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+        .brand-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        .brand-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2rem;
+            text-align: left;
+            display: inline-block; /* Center the list block */
+        }
+        .brand-card li {
+            font-size: 1rem;
+            font-weight: 500;
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.75rem;
+        }
+        .brand-card li::before {
+            content: '✓'; /* Checkmark */
+            color: var(--color-accent-cta);
+            position: absolute;
+            left: 0;
+            font-weight: 900;
+        }
+        .btn-card {
+            background-color: var(--color-accent-cta);
+            color: var(--color-white);
+            width: 100%; /* Full width */
+            font-size: 1.1rem;
+            padding: 1rem;
+        }
+        .btn-card:hover {
+            background-color: var(--color-accent-secondary);
+            color: var(--color-primary);
+        }
+
+        /* NEW: Social Media Icons in Brand Card */
+        .brand-card-socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem; /* Space between icons */
+            margin-top: 1.5rem; /* Space above the icons */
+        }
+        .social-link {
+            display: inline-block;
+        }
+        .social-link svg {
+            width: 28px; /* Icon size */
+            height: 28px; /* Icon size */
+            fill: var(--color-primary); /* Icon color (navy) */
+            transition: fill 0.3s ease;
+        }
+        .social-link:hover svg,
+        .social-link:focus svg {
+            fill: var(--color-accent-cta); /* Icon hover color (red) */
+        }
+
+
+        /* TREATMENT PLANNING (Now full width) */
+        .treatment-planning-full {
+            padding: 4rem 0;
+            background-color: var(--color-light-gray);
+            text-align: center; 
+        }
+        .treatment-planning-full h2 {
+            font-size: 2.2rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+        .treatment-planning-full p.slogan {
+            font-weight: 600; 
+            color: var(--color-accent-cta);
+            font-size: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto 2rem;
+        }
+        .treatment-planning-list {
+            list-style: none;
+            padding: 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .treatment-planning-list li {
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background-color: var(--color-white);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            text-align: left;
+            font-size: 1.125rem;
+        }
+        .treatment-planning-list li strong {
+            display: block;
+            font-size: 1.35rem;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+
+
+        /* LOCATION CARDS (NEW DEDICATED SECTION) */
+        .locations-section {
+            padding: 4rem 0;
+            background-color: var(--color-white);
+        }
+        .all-locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            padding: 0;
+        }
+        .location-card {
+            background-color: var(--color-white);
+            border: 1px solid var(--color-light-gray);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            overflow: hidden; 
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: left;
+        }
+        .location-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+        /* Image Wrapper for Location Card */
+        .location-card-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 140px; /* Consistent height for all cards */
+        }
+        .location-card-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .location-card:hover .location-card-image-wrapper img {
+            transform: scale(1.05);
+        }
+        .location-card-header {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(13, 25, 64, 0.9); /* Semi-transparent navy bar */
+            color: var(--color-white);
+            padding: 0.5rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        .location-card-content {
+            padding: 1.5rem;
+        }
+        .location-card-content p {
+            font-size: 0.95rem; 
+            color: #555;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        .location-card-rating {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+        .location-card-rating span {
+            color: gold; 
+            margin-right: 5px;
+            font-size: 1.2em;
+        }
+        .location-card-cta {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+        }
+
+        /* NEW: CONTACT SECTION STYLES */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Mobile-first: 1 column */
+            gap: 2rem;
+            align-items: stretch; /* Make columns equal height */
+        }
+        .contact-info-box {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            padding: 2.5rem 2rem;
+            color: var(--color-white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #333; /* Fallback */
+            background-image: url('images/SunriseOrlandoFrontEntrance-1000x660.jpg'); /* Same as hero */
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+            z-index: 1;
+        }
+        .contact-info-box::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(13, 25, 64, 0.9); /* Hero overlay */
+            z-index: -1;
+        }
+        .contact-info-box h3 {
+            font-size: 2rem;
+            color: var(--color-white);
+            margin-bottom: 1rem;
+        }
+        .contact-info-box p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+        }
+        .contact-info-box p.strong {
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--color-accent-secondary);
+            text-transform: uppercase; /* UPDATED */
+            text-align: center; /* UPDATED */
+        }
+
+        /* 2-Column Form Fields */
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr; /* Mobile-first */
+            gap: 1rem;
+        }
+        .form-row > div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Checkbox Group */
+        .form-checkbox-group {
+            margin: 1rem 0;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .form-checkbox-group label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* UPDATED */
+            gap: 0.75rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+        }
+        .form-checkbox-group label:last-child {
+            margin-bottom: 0;
+        }
+        .form-checkbox-group input[type="checkbox"] {
+            width: 1.25em;
+            height: 1.25em;
+            flex-shrink: 0;
+        }
+
+        /* NEW: Form Consent Text */
+        .form-consent-text {
+            font-size: 0.75rem;
+            color: #777;
+            text-align: center;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+        }
+
+        /* NEW: INSURANCE SECTION STYLES */
+        .insurance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .insurance-card {
+            background-color: var(--color-white);
+            border: 1px solid var(--color-light-gray);
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .insurance-card h4 {
+            color: var(--color-primary);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--color-accent-cta);
+            padding-bottom: 0.5rem;
+        }
+        .insurance-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .insurance-card li {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .insurance-card li::before {
+            content: '✓';
+            color: var(--color-accent-cta);
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+        }
+
+
+        /* FOOTER */
+        footer {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: var(--color-accent-secondary);
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: var(--color-white);
+        }
+        .footer-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .copyright {
+            margin-bottom: 1rem;
+        }
+
+        /* NEW: MEDICAL DISCLAIMER STYLES */
+        .medical-disclaimer {
+            margin: 2rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: left;
+            max-width: 900px;
+        }
+        .medical-disclaimer h4 {
+            font-size: 1rem;
+            color: var(--color-white);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        .medical-disclaimer p {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1rem;
+        }
+        .medical-disclaimer p:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* Mobile-first adjustments */
+        @media (max-width: 767px) {
+            .hero-content-wrapper { 
+                text-align: center; 
+                padding-right: 0;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .brand-card {
+                order: -1; 
+                margin-bottom: 2rem;
+            }
+        }
+        
+        /* Tablet & Desktop Layout */
+        @media (min-width: 768px) {
+            .section-padded { padding: 6rem 0; }
+
+            /* NEW: Alert Banner Desktop Size */
+            .alert-banner {
+                font-size: 1rem;
+                padding: 1rem 2rem;
+            }
+
+            .hero-grid { 
+                grid-template-columns: 3fr 2fr; 
+            }
+            .hero { min-height: 80vh; }
+            .hero h1 { font-size: 4rem; }
+            .hero-content-wrapper { padding-right: 4rem; }
+            
+            /*
+             * REMOVED: .image-cards-grid rules. 
+             * They are now loaded *only* from style.css
+             */
+
+            .treatment-planning-full h2 { font-size: 3rem; }
+            .treatment-planning-full p.slogan { font-size: 1.75rem; }
+
+            .all-locations-grid {
+                grid-template-columns: repeat(3, 1fr); 
+                gap: 2rem;
+            }
+
+            /* NEW: Contact Form Grid @ Desktop */
+            .contact-grid {
+                grid-template-columns: 2fr 1.5fr; /* 2-col layout */
+                gap: 2.5rem;
+            }
+            .form-row {
+                grid-template-columns: 1fr 1fr; /* 2-col for fields */
+            }
+            .contact-info-box {
+                min-height: 100%; /* Stretches to match form height */
+            }
+
+            /* NEW: Insurance Card Columns */
+            .insurance-card ul {
+                columns: 2; /* Creates 2 columns inside the card */
+                gap: 1rem;
+            }
+        }
+        /* Desktop (1024px +) */
+        @media (min-width: 1024px) {
+            /*
+             * REMOVED: .image-card img rule. 
+             * It is now loaded *only* from style.css
+             */
+            .all-locations-grid { gap: 3rem; }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+
+    </head>
+<body>
+    
+    <header>
+        <div class="nav-content container">
+            <div class="logo">
+                <a href="#top" aria-label="Sunrise Detox Homepage">
+                    <img src="images/Sunrise_Logo_white.png" alt="Sunrise Detox Logo Icon">
+                    <span style="margin-left: 0.5rem;">SUNRISE DETOX</span>
+                </a> 
+            </div>
+            
+            <a href="tel:8669894252" class="header-cta-mobile btn" role="button" aria-label="Call 24/7 Helpline">
+                Call 866-989-4252
+            </a>
+            
+            <nav class="nav-menu" aria-label="Site Navigation">
+                <a href="#locations-full">Our Locations</a>
+                <a href="#insurance">Insurance Accepted</a>
+                <a href="#treatment-planning">Treatment Planning</a>
+            </nav>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation-menu" aria-label="Toggle navigation">
+                </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="alert-banner">
+            NEED HELP? CALL 24/7. WE'LL FIND THE RIGHT CARE, EVEN IF IT'S NOT WITH US.
+        </div>
+
+        <section class="hero" aria-label="Immediate detox care available">
+            <div class="hero-background" style="background-image: url('images/SunriseOrlandoFrontEntrance-1000x660.jpg');"></div>
+            <div class="container hero-grid">
+                
+                <div class="hero-content-wrapper"> 
+
+                    <div class="hero-call-text-block hero-call-center">
+                        <a href="tel:8669894252" class="hero-phone-cta">866-989-4252</a>
+                        <p class="hero-confidential-text">All Calls Confidential</p>
+                    </div>
+                    
+                    <h1>IN-PATIENT MEDICAL DETOX</h1> 
+                    
+                    <h3 class="hero-locations-pipe-list">
+                        <span><a href="https://maps.google.com/?cid=4627784378742255009&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Atlanta, GA</a></span>
+                        <span><a href="https://maps.google.com/?cid=6169850172833549059&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Cherry Hill, NJ</a></span>
+                        <span><a href="https://maps.google.com/?cid=13319586356843109517&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Duluth, GA</a></span>
+                        <span><a href="https://maps.google.com/?cid=17510891516610945130&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Fort Lauderdale, FL</a></span>
+                        <span><a href="https://maps.google.com/?cid=9299335538483624620&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Long Island, NY</a></span>
+                        <span><a href="https://maps.google.com/?cid=1551577997598545546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Orlando, FL</a></span>
+                        <span><a href="https://maps.google.com/?cid=2699771991555125006&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Palm Beach, FL</a></span>
+                        <span><a href="https://maps.google.com/?cid=1458541165253864848&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Toms River, NJ</a></span>
+                        <span><a href="https://maps.google.com/?cid=6787002805356487663&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Millbury, MA</a></span>
+                    </h3>
+
+                    <p style="margin-top: 2rem;">
+                        Sunrise Detox provides a safe, comfortable, and medically supervised path to recovery from alcohol and drug dependence. Our compassionate team offers round-the-clock care, ensuring a secure and supportive environment for your healing journey.
+                    </p>
+                    
+                    <a href="tel:8669894252" class="btn btn-primary" role="button" style="margin-top: 1rem;">
+                        Call Our 24/7 Help Center
+                    </a>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-card-logo">
+                        <img src="images/Sunrise_Logo.png" alt="Sunrise Detox Logo Icon">
+                    </div>
+                    <h4>Sunrise Detox</h4>
+                    <p>Inpatient Medical Detox. Available 24/7</p>
+                    <ul>
+                        <li>Immediate Help</li>
+                        <li>Medical Supervision</li>
+                        <li>Confidential</li>
+                        <li>9 Locations Nationwide</li>
+                    </ul>
+                    <a href="tel:8669894252" class="btn btn-card" role="button">
+                        Call 866-989-4252
+                    </a>
+
+                    <div class="brand-card-socials">
+                        <a href="https://www.facebook.com/yourpage" class="social-link" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0C143.84 0 92.8 50.52 92.8 124.72v70.62H22.89V288h70.09v224h100.17V288h75.98z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/yourpage" class="social-link" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/yourpage" class="social-link" aria-label="Follow us on TikTok" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V209.9a210.1 210.1 0 0 1 210.8-82.3v70.1Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="image-cards-section" aria-labelledby="facility-gallery-heading">
+            <div class="container">
+                <h2 id="facility-gallery-heading" class="text-center">Our Welcoming Environment</h2>
+                <p class="text-center" style="margin-bottom: 2rem;">Experience comfort and care at Sunrise Detox.</p>
+
+                <div class="image-cards-grid">
+                    <article class="image-card">
+                        <img data-src="images/SunriseOrlandoLiving-1000x660.jpg" class="lazy-load" alt="Comfortable living area at Sunrise Detox" width="1000" height="660" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                        <div class="image-card-content">
+                            <h3>Comfortable Living Spaces</h3>
+                            <p>Relax and heal in our serene and well-appointed common areas.</p>
+                            <a href="tel:8669894252">Call Us Now →</a>
+                        </div>
+                    </article>
+                    <article class="image-card">
+                        <img data-src="images/SunriseOrlandoOneBedroom-1000x660.jpg" class="lazy-load" alt="Private bedroom at Sunrise Detox" width="1000" height="660" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                        <div class="image-card-content">
+                            <h3>Private Rooms Available</h3>
+                            <p>Individualized comfort with options for private and semi-private accommodations.</p>
+                            <a href="tel:8669894252">Call Us Now →</a>
+                        </div>
+                    </article>
+                    <article class="image-card">
+                        <img data-src="images/SunriseOrlandoTwoBedroom-1000x660.jpg" class="lazy-load" alt="Spacious bedroom at Sunrise Detox" width="1000" height="660" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                        <div class="image-card-content">
+                            <h3>A Peaceful Place to Heal</h3>
+                            <p>Our facilities are designed to promote peace, safety, and recovery.</p>
+                            <a href="tel:8669894252">Call Us Now →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="treatment-planning" class="treatment-planning-full" aria-labelledby="treatment-planning-heading">
+            <div class="container">
+                <h2 id="treatment-planning-heading">Your Personalized Treatment Planning Starts Here</h2>
+                
+                <p class="slogan">
+                    We see your recovery as a journey, not a destination. Our goal is to safely transition you from detox to long-term sobriety, starting with a comprehensive plan built just for you.
+                </p>
+
+                <ul class="treatment-planning-list">
+                    <li>
+                        <strong>Comprehensive Assessment:</strong> Every recovery journey begins with a thorough medical and psychological evaluation. We identify your specific needs, substance history, and any co-occurring disorders to craft an individualized care plan.
+                    </li>
+                    <li>
+                        <strong>Medically-Supervised Stabilization:</strong> The detox phase is managed by licensed medical professionals who utilize evidence-based protocols and medications to minimize discomfort and ensure a safe withdrawal process.
+                    </li>
+                    <li>
+                        <strong>Creating a Continuum of Care:</strong> Detox is only the first step. Before you leave, our specialists work with you to secure placement in a long-term treatment facility, ensuring a seamless transition and sustained sobriety.
+                    </li>
+                </ul>
+
+                <div class="text-center" style="margin-top: 2rem;">
+                     <a href="tel:8669894252" class="btn btn-primary" role="button">
+                        Call Us Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="locations-full" class="locations-section" aria-labelledby="all-locations-heading">
+            <div class="container">
+                <h2 id="all-locations-heading" class="text-center">Our 9 Sunrise Detox Locations</h2>
+                <p class="text-center" style="margin-bottom: 2rem;">Immediate help is available nationwide. Click to view the map for your preferred facility.</p>
+                
+                <div class="all-locations-grid">
+
+    <article id="alpharetta_georgia-card" class="location-card">
+        <div class="location-card-image-wrapper">
+            <img data-src="images/sdc_alpha.jpg" class="lazy-load" alt="Sunrise Detox at Alpharetta Facility" width="100%" height="100%" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+            <div class="location-card-header">Alpharetta</div>
+        </div>
+        <div class="location-card-content">
+            <p>4500 North Point Parkway<br>Alpharetta, GA 30022-2409</p>
+
+            <a href="locations/alpharetta_georgia/" class="btn btn-primary location-card-cta">View Location Page</a>
+        
+        </div>
+    </article>
+    
+
+    <article id="brentwood_newyork-card" class="location-card">
+        <div class="location-card-image-wrapper">
+            <img data-src="images/sdc_longisland.jpg" class="lazy-load" alt="Sunrise Detox at Brentwood Facility" width="100%" height="100%" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+            <div class="location-card-header">Brentwood</div>
+        </div>
+        <div class="location-card-content">
+            <p>141 8th Street<br>Brentwood, NY 11717-5325</p>
+
+            <a href="locations/brentwood_newyork/" class="btn btn-primary location-card-cta">View Location Page</a>
+        
+        </div>
+    </article>
+    
+
+    <article id="cherryhill_newjersey-card" class="location-card">
+        <div class="location-card-image-wrapper">
+            <img data-src="images/sdc_cherry.jpg" class="lazy-load" alt="Sunrise Detox at Cherry Hill Facility" width="100%" height="100%" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+            <div class="location-card-header">Cherry Hill</div>
+        </div>
+        <div class="location-card-content">
+            <p>1417 Brace Road Suite C<br>Cherry Hill, NJ 08034-3524</p>
+
+            <a href="locations/cherryhill_newjersey/" class="btn btn-primary location-card-cta">View Location Page</a>
+        
+        </div>
+    </article>
+    
+
+    <article id="duluth_georgia-card" class="location-card">
+        <div class="location-card-image-wrapper">
+            <img data-src="images/sdc_duluth.jpg" class="lazy-load" alt="Sunrise Detox at Duluth Facility" width="100%" height="100%" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+            <div class="location-card-header">Duluth</div>
+        </div>
+        <div class="location-card-content">
+            <p>3390 N BERKELEY LAKE RD NW<br>Duluth, GA 30096-3006</p>
+
+            <a href="locations/duluth_georgia/" class="btn btn-primary location-card-cta">View Location Page</a>
+        
+        </div>
+    </article>
+    
+
+    <article id="ftlauderdale_florida-card" class="location-card">
+        <div class="location-card-image-wrapper">
+            <img data-src="images/sdc_ftl.jpg" class="lazy-load" alt="Sunrise Detox at Fort Lauderdale Facility" width="100%" height="100%" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+            <div class="location-card-header">Fort Lauderdale</div>
+        </div>
+        <div class="location-card-content">
+            <p>2331 NE 53rd Street<br>Fort Lauderdale, FL 33308-3235</p>
+
+            <a href="locations/ftlauderdale_florida/" class="btn btn-primary location-card-cta">View Location Page</a>
+        
+        </div>
+    </article>
+    
+
+    <article id="lakeworth_florida-card" class="location-card">
+        <div class="location-card-image-wrapper">
+            <img data-src="images/sdc_pb.jpg" class="lazy-load" alt="Sunrise Detox at Lake Worth Facility" width="100%" height="100%" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+            <div class="location-card-header">Lake Worth</div>
+        </div>
+        <div class="location-card-content">
+            <p>3185 Boutwell Road<br>Lake Worth, FL 33461-2610</p>
+
+            <a href="locations/lakeworth_florida/" class="btn btn-primary location-card-cta">View Location Page</a>
+        
+        </div>
+    </article>
+    
+
+    <article id="millbury_massachusetts-card" class="location-card">
+        <div class="location-card-image-wrapper">
+            <img data-src="images/sdc_mill.jpg" class="lazy-load" alt="Sunrise Detox at Millbury Facility" width="100%" height="100%" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+            <div class="location-card-header">Millbury</div>
+        </div>
+        <div class="location-card-content">
+            <p>29 Main Street<br>Millbury, MA 01527-2005</p>
+
+            <a href="locations/millbury_massachusetts/" class="btn btn-primary location-card-cta">View Location Page</a>
+        
+        </div>
+    </article>
+    
+
+    <article id="orlando_florida-card" class="location-card">
+        <div class="location-card-image-wrapper">
+            <img data-src="images/sdc_orlando.jpg" class="lazy-load" alt="Sunrise Detox at Orlando Facility" width="100%" height="100%" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+            <div class="location-card-header">Orlando</div>
+        </div>
+        <div class="location-card-content">
+            <p>2431 West Sand Lake Road<br>Orlando, FL 32809-7641</p>
+
+            <a href="locations/orlando_florida/" class="btn btn-primary location-card-cta">View Location Page</a>
+        
+        </div>
+    </article>
+    
+
+    <article id="tomsriver_newjersey-card" class="location-card">
+        <div class="location-card-image-wrapper">
+            <img data-src="images/sdc_toms.jpg" class="lazy-load" alt="Sunrise Detox at Toms River Facility" width="100%" height="100%" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+            <div class="location-card-header">Toms River</div>
+        </div>
+        <div class="location-card-content">
+            <p>16 Whitesville Road Suite A<br>Toms River, NJ 08753-4107</p>
+
+            <a href="locations/tomsriver_newjersey/" class="btn btn-primary location-card-cta">View Location Page</a>
+        
+        </div>
+    </article>
+    
+</div>
+
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="tel:8669894252" class="btn btn-primary" role="button">
+                        Call Us Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padded bg-light-gray" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="text-center">Ready to Take the First Step? Contact Us 24/7</h2>
+                
+                <div class="contact-grid">
+                    
+                    <div class="contact-form-wrapper">
+                        <h3>Send Us a Confidential Message</h3>
+                        <form id="contact-form" action="[FORMSPREE_OR_SERVER_ENDPOINT]" method="POST">
+                            
+                            <div class="form-row">
+                                <div>
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="(555) 555-5555">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div>
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="john.doe@example.com">
+                                </div>
+                                <div>
+                                    <label for="zip">Zip Code</label>
+                                    <input type="text" id="zip" name="zip" placeholder="Your Zip Code">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="message">Your Message / Question</label>
+                                <textarea id="message" name="message" required placeholder="I need help for myself/a loved one. What are the next steps?"></textarea>
+                            </div>
+
+                            <div class="form-checkbox-group">
+                                <label for="cb-call">
+                                    Call Me Immediately
+                                    <input type="checkbox" id="cb-call" name="contact-pref" value="call">
+                                </label>
+                                <label for="cb-text">
+                                    Please Text Me
+                                    <input type="checkbox" id="cb-text" name="contact-pref" value="text">
+                                </label>
+                                <label for="cb-email">
+                                    Email Me About Sunrise
+                                    <input type="checkbox" id="cb-email" name="contact-pref" value="email">
+                                </label>
+                            </div>
+
+                            <p class="form-consent-text">
+                                By submitting this form, you consent to be contacted by Sunrise Detox at the email address and/or phone number provided, including by phone call or text message. You also agree to receive email communications from us. Consent is not a condition of purchase.
+                            </p>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Secure Inquiry</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-box">
+                        <h3>Need Help Now?</h3>
+                        <p>Don't let cost or insurance confusion stop you. We accept most major insurance, are in-network with many plans, and offer self-pay options. Our team will personally work with your provider to maximize your coverage.</p>
+                        <p class="strong">
+                            If we aren't the right fit, we will personally call other providers to find the care you need. Your recovery is our only goal.
+                        </p>
+                        <a href="tel:8669894252" class="btn btn-primary" style="margin-top: 1.5rem;">Call 866-989-4252 For Immediate Help</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="insurance" class="section-padded">
+            <div class="container">
+                <h2 class="text-center" style="margin-bottom: 1rem;">Insurance Accepted at Sunrise Detox</h2>
+                <p class="text-center" style="max-width: 800px; margin: 0 auto 2rem auto; font-size: 1.1rem;">
+                    Are the services from Sunrise Detox Center covered by your insurance? While we are in-network with most insurance plans, refer to this guide to find more information about your provider. Don’t find your insurer, or have further insurance questions? Call <a href="tel:866-750-8588" style="font-weight: 700;">866-750-8588</a>, and we’ll be glad to find you answers. We’re ready to talk at all hours, every day of the week.
+                </p>
+                
+                <h3 class="text-center" style="font-size: 1.75rem; margin-bottom: 1rem;">Find Your In-Network Insurance</h3>
+                <p class="text-center" style="margin-bottom: 2.5rem;">We believe in making skilled, affordable treatment accessible. We work with most major insurance providers. Here are the popular in-network providers we contract with:</p>
+
+                <div class="insurance-grid">
+                    
+                    <article class="insurance-card">
+                        <h4>Sunrise Detox Morristown, NJ</h4>
+                        <ul>
+                            <li>Allied Trades</li>
+                            <li>American Behavioral</li>
+                            <li>AmeriHealth</li>
+                            <li>Blue Cross Blue Shield (BCBS)</li>
+                            <li>Health Smart</li>
+                            <li>Horizon BCBS</li>
+                            <li>Humana</li>
+                            <li>Lower Hudson Valley EAP</li>
+                            <li>Magellan</li>
+                            <li>MagnaCare</li>
+                            <li>MultiPlan</li>
+                            <li>Three Rivers Provider Network</li>
+                            <li>Workforce Assistance</li>
+                        </ul>
+                    </article>
+
+                    <article class="insurance-card">
+                        <h4>Sunrise Detox Ft. Lauderdale, FL</h4>
+                        <ul>
+                            <li>Aetna</li>
+                            <li>Allied Trades</li>
+                            <li>American Behavioral</li>
+                            <li>Beacon Health Options/Value Options</li>
+                            <li>Beech Street</li>
+                            <li>Health Smart</li>
+                            <li>Lower Hudson Valley EAP</li>
+                            <li>Magellan</li>
+                            <li>MagnaCare</li>
+                            <li>Managed Care Concepts</li>
+                            <li>MultiPlan</li>
+                            <li>Three Rivers Provider Network</li>
+                            <li>Value Options</li>
+                            <li>Workforce Assistance</li>
+                        </ul>
+                    </article>
+
+                    <article class="insurance-card">
+                        <h4>Sunrise Detox Orlando, FL</h4>
+                        <ul>
+                            <li>Aetna</li>
+                            <li>Ambetter</li>
+                            <li>American Behavioral</li>
+                            <li>Beacon Health Options/GHI Network</li>
+                            <li>Humana</li>
+                            <li>Lower Hudson Valley EAP</li>
+                            <li>Magellan</li>
+                            <li>MagnaCare</li>
+                            <li>MultiPlan</li>
+                            <li>OptimServe</li>
+                            <li>Three Rivers Provider Network</li>
+                            <li>Workforce Assistance</li>
+                        </ul>
+                    </article>
+
+                    <article class="insurance-card">
+                        <h4>Sunrise Detox Palm Beach, FL</h4>
+                        <ul>
+                            <li>Aetna</li>
+                            <li>Allied Trades</li>
+                            <li>Ambetter</li>
+                            <li>American Behavioral</li>
+                            <li>APA</li>
+                            <li>Beacon Health Options/Value Options</li>
+                            <li>Beech Street</li>
+                            <li>First Health</li>
+                            <li>Health Smart</li>
+                            <li>Humana</li>
+                            <li>Lower Hudson Valley EAP</li>
+                            <li>Magellan</li>
+                            <li>MagnaCare</li>
+                            <li>Managed Health Network (MHN)</li>
+                            <li>Memorial Integrated Health Care</li>
+                            <li>MultiPlan</li>
+                            <li>Three Rivers Provider Network</li>
+                            <li>Value Options</li>
+                            <li>Workforce Assistance</li>
+                        </ul>
+                    </article>
+
+                    <article class="insurance-card">
+                        <h4>Sunrise Detox Alpharetta, GA</h4>
+                        <ul>
+                            <li>Ambetter</li>
+                            <li>American Behavioral</li>
+                            <li>Blue Cross Blue Shield (BCBS)</li>
+                            <li>Beacon Health</li>
+                            <li>Beacon Health Options/GHI</li>
+                            <li>Cigna Connect</li>
+                            <li>Delta Airlines</li>
+                            <li>Humana</li>
+                            <li>Lower Hudson Valley EAP</li>
+                            <li>Magellan</li>
+                            <li>MagnaCare</li>
+                            <li>Managed Care Concepts</li>
+                            <li>MultiPlan</li>
+                        </ul>
+                    </article>
+
+                    <article class="insurance-card">
+                        <h4>Sunrise Detox Duluth, GA</h4>
+                        <ul>
+                            <li>Ambetter</li>
+                            <li>Cigna Connect</li>
+                        </ul>
+                    </article>
+
+                    <article class="insurance-card">
+                        <h4>Sunrise Detox Millbury, MA</h4>
+                        <ul>
+                            <li>Aetna</li>
+                            <li>BCBS MA</li>
+                            <li>HMC Healthworks</li>
+                            <li>Harvard Pilgrim/Point 32</li>
+                            <li>Humana</li>
+                            <li>Lower Hudson Valley EAP</li>
+                            <li>Magellan</li>
+                            <li>OptumServe</li>
+                            <li>Tricare (Humana Military)</li>
+                            <li>Tufts</li>
+                            <li>Workforce Assistance</li>
+                        </ul>
+                    </article>
+
+                    <article class="insurance-card">
+                        <h4>Sunrise Detox Cherry Hill, NJ</h4>
+                        <ul>
+                            <li>Allied Trades</li>
+                            <li>American Behavioral</li>
+                            <li>AmeriHealth</li>
+                            <li>Blue Cross Blue Shield (BCBS)</li>
+                            <li>Health Smart</li>
+                            <li>Horizon BCBS</li>
+                            <li>Humana</li>
+                            <li>Independence BCBS</li>
+                            <li>Lower Hudson Valley EAP</li>
+                            <li>Magellan</li>
+                            <li>MagnaCare</li>
+                            <li>MultiPlan</li>
+                            <li>Three Rivers Provider Network</li>
+                            <li>Workforce Assistance</li>
+                        </ul>
+                    </article>
+
+                    <article class="insurance-card">
+                        <h4>Sunrise Detox Toms River, NJ</h4>
+                        <ul>
+                            <li>Aetna</li>
+                            <li>Allied Trades</li>
+                            <li>American Behavioral</li>
+                            <li>AmeriHealth</li>
+                            <li>Blue Cross Blue Shield (BCBS)</li>
+                            <li>Health Smart</li>
+                            <li>Horizon BCBS</li>
+                            <li>Humana</li>
+                            <li>Lower Hudson Valley EAP</li>
+                            <li>Magellan</li>
+                            <li>MagnaCare</li>
+                            <li>MultiPlan</li>
+                            <li>OptumServe</li>
+                            <li>Three Rivers Provider Network</li>
+                            <li>Workforce Assistance</li>
+                        </ul>
+                    </article>
+
+                    <article class="insurance-card">
+                        <h4>Sunrise Detox Long Island, NY</h4>
+                        <ul>
+                            <li>Aetna</li>
+                            <li>Magellan</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p class="copyright">© <span id="current-year">2024</span> Praesum Healthcare. All Rights Reserved.</p>
+            <img src="images/Sunrise_Logo_white.png" alt="Sunrise Detox Full Logo" style="max-height: 50px; margin-top: 1rem;">
+
+            <div class="medical-disclaimer">
+                <h4>Medical Disclaimer</h4>
+                <p>
+                    The content of this website is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Website text, graphics, videos, images, and other content are for informational purposes only. Never use the contents of this website as a substitute for the advice of a doctor. Always consult a physician if you have questions or concerns about health matters, including any drugs, supplements, maladies or remedies mentioned.
+                </p>
+                <p>
+                    Descriptions and reports on products or services mentioned on this website should not be considered endorsements nor recommendations. If you have a medical emergency, call 911 or a doctor immediately. If you have concerns about suicide, please call the National Hotline at 1-800-273-8255.
+                </p>
+            </div>
+            </div>
+    </footer>
+
+    <script src="script.js" defer></script> 
+</body>
+</html>

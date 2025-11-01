@@ -1,0 +1,408 @@
+/* ===================================================================
+    EXTERNAL STYLESHEET (style.css)
+    - Non-Critical, Below-the-Fold, Tablet, and Desktop Styles
+    - Uses CSS variables defined in index.html (Critical CSS)
+    ===================================================================
+*/
+/* NEW: Hero CTA Styling */
+.hero-call-text-block {
+    margin-bottom: 2rem;
+    text-align: center; /* CENTER THE BLOCK */
+}
+.hero-phone-cta {
+    display: inline-block;
+    font-size: 1.75rem; /* MUCH LARGER SIZE */
+    font-weight: 900; /* Bolder */
+    color: var(--color-white);
+    background-color: var(--color-accent-cta);
+    padding: 0.75rem 1.5rem; /* Larger padding for CTA feel */
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.hero-phone-cta:hover {
+    background-color: var(--color-accent-secondary);
+    color: var(--color-primary);
+}
+.hero-confidential-text {
+    display: block;
+    font-size: 0.9rem; /* SMALLER TEXT */
+    font-weight: 500;
+    color: var(--color-light-gray);
+    margin-top: 0.25rem;
+}
+/* --- Accessibility & Utility Styles --- */
+
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+    outline: 3px solid var(--color-accent-secondary);
+    outline-offset: 2px;
+}
+.text-center { text-align: center; }
+.bg-light-gray { background-color: var(--color-light-gray); }
+.section-padded { padding: 4rem 0; }
+
+
+/* --- Mobile Menu Styles (Ensures functionality from script.js) --- */
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1010;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+}
+.menu-toggle::before, .menu-toggle::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-white);
+    transition: transform 0.3s, opacity 0.3s;
+}
+.menu-toggle[aria-expanded="true"]::before {
+    transform: translateY(11px) rotate(45deg);
+}
+.menu-toggle[aria-expanded="true"]::after {
+    transform: translateY(-11px) rotate(-45deg);
+}
+.nav-menu.active {
+    display: flex;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color-primary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    z-index: 999;
+}
+.nav-menu.active a {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+    text-align: center;
+    font-weight: 600;
+}
+.nav-menu.active a:last-child { border-bottom: none; }
+
+
+/* --- Contact / Form Styles --- */
+
+.contact-form-wrapper {
+    /* UPDATED: Removed max-width and margin: auto */
+    padding: 2rem;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.contact-form-wrapper h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+}
+#contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem; /* Slightly smaller label */
+}
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+#contact-form input:focus, #contact-form textarea:focus {
+    border-color: var(--color-accent-cta);
+}
+#contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+/* --- Footer Styles --- */
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+footer a {
+    color: var(--color-accent-secondary);
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: var(--color-white);
+}
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+}
+.copyright {
+    margin-bottom: 1rem;
+}
+
+
+/* ===================================================================
+    BELOW THE FOLD SECTIONS
+    ===================================================================
+*/
+
+/* IMAGE CARDS SECTION */
+.image-cards-section {
+    padding: 4rem 0;
+    background-color: var(--color-white); 
+}
+.image-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* This is the correct mobile-first rule */
+    gap: 1.5rem;
+}
+.image-card {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    overflow: hidden; 
+    text-align: center;
+}
+.image-card img {
+    width: 100%;
+    height: 200px; /* Mobile-first image height */
+    object-fit: cover; 
+    border-bottom: 1px solid var(--color-light-gray);
+}
+.image-card-content {
+    padding: 1.5rem;
+}
+.image-card-content h3 {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+.image-card-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+.image-card-content a {
+    font-weight: 600;
+}
+
+/* TREATMENT PLANNING (Full width) */
+.treatment-planning-full {
+    padding: 4rem 0;
+    background-color: var(--color-light-gray);
+    text-align: center; 
+}
+.treatment-planning-full h2 {
+    font-size: 2.2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+.treatment-planning-full p.slogan {
+    font-weight: 600; 
+    color: var(--color-accent-cta);
+    font-size: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+}
+.treatment-planning-list {
+    list-style: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.treatment-planning-list li {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: left;
+    font-size: 1.125rem;
+}
+.treatment-planning-list li strong {
+    display: block;
+    font-size: 1.35rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+
+/* LOCATION CARDS (Dedicated Section) */
+.locations-section {
+    padding: 4rem 0;
+    background-color: var(--color-white);
+}
+.all-locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 0;
+}
+.location-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    overflow: hidden; 
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+}
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+/* Image Wrapper for Location Card */
+.location-card-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 140px; 
+}
+.location-card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.location-card:hover .location-card-image-wrapper img {
+    transform: scale(1.05);
+}
+.location-card-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(13, 25, 64, 0.9);
+    color: var(--color-white);
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.location-card-content {
+    padding: 1.5rem;
+}
+.location-card-content p {
+    font-size: 0.95rem; 
+    color: #555;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+.location-card-rating {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+.location-card-rating span {
+    color: gold; 
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+.location-card-cta {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+}
+
+
+/* ===================================================================
+    MEDIA QUERIES (Tablet & Desktop)
+    ===================================================================
+*/
+
+/* Tablet (768px - 1023px) */
+@media (min-width: 768px) {
+    /* Header */
+    .header-cta-mobile { display: none; } 
+    .menu-toggle { display: none; }
+    .nav-content { justify-content: space-around; } 
+    .nav-menu { 
+        display: flex; /* THIS WAS THE BROKEN LINE */
+        gap: 1.5rem;
+        font-weight: 500;
+    }
+    .nav-menu a {
+        color: var(--color-white);
+        padding: 0.5rem 0;
+        position: relative;
+    }
+    .nav-menu a:hover, .nav-menu a:focus {
+        color: var(--color-accent-secondary);
+    }
+    
+    /* Hero */
+    .hero { min-height: 70vh; }
+    .hero h1 { font-size: 4rem; }
+    .hero p { font-size: 1.25rem; }
+
+    /* Image Cards Grid */
+    .image-cards-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3-column rule */
+        gap: 1.5rem;
+    }
+    .image-card img {
+        height: 250px; /* Tablet image height */
+    }
+
+    /* Treatment Planning */
+    .treatment-planning-full h2 { font-size: 3rem; }
+    .treatment-planning-full p.slogan { font-size: 1.75rem; }
+
+    /* Locations Grid */
+    .all-locations-grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 2rem;
+    }
+}
+
+/* Desktop (1024px +) */
+@media (min-width: 1024px) {
+    .section-padded { padding: 6rem 0; }
+    
+    /* Header */
+    .nav-content { justify-content: space-between; }
+    .nav-menu { gap: 2rem; }
+    
+    /* Hero */
+    .hero { min-height: 80vh; }
+    .hero h1 { font-size: 4rem; }
+
+    /* Image Cards Grid */
+    .image-card img { 
+        height: 300px; /* Desktop image height */
+    } 
+
+    /* Locations Grid */
+    .all-locations-grid {
+        gap: 3rem; 
+    }
+}
+
+/* ===================================================================
+    MOBILE-SPECIFIC OVERRIDES
+    ===================================================================
+*/
+
+@media (max-width: 767px) {
+    /* Hide the redundant hero CTA block, as we have one in the header */
+    .hero-call-text-block {
+        display: none;
+    }
+}
