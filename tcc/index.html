@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>The Counseling Center - Outpatient Addiction &amp; Mental Health</title>
+    <meta name="description" content="Personal outpatient counseling for addiction and mental health. Call 866-850-5001. We're standing by to help with individual and group therapy.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="[CANONICAL_URL_FOR_BRAND_PAGE]">
+    
+    <meta property="og:title" content="The Counseling Center - Immediate Help Available: 866-850-5001">
+    <meta property="og:description" content="Personal outpatient counseling for addiction and mental health.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[CANONICAL_URL_FOR_BRAND_PAGE]">
+    <meta property="og:image" content="images/hero_tcc.jpg"> <link rel="icon" type="image/png" href="images/TCC profile pic.jpg"> <style>
+        /* CSS Variables - Uses TCC Color Palette */
+        :root {
+            --color-primary: #347EBF; /* Dark Blue */
+            --color-accent-cta: #4183D9; /* Main Blue */
+            --color-accent-secondary: #66A3D9; /* Light Blue (Hover) */
+            --color-light-gray: #F2F2F2; /* Backgrounds */
+            --color-white: #FFFFFF;
+            --font-stack: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --header-height: 64px;
+        }
+
+        /* Base Reset & Typography */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: var(--font-stack); 
+            line-height: 1.6; 
+            color: var(--color-primary); 
+            background-color: var(--color-white);
+            min-height: 100vh;
+        }
+        main {
+            padding-top: var(--header-height); /* Pushes ALL content down below the fixed header */
+        }
+        h1, h2, h3 { line-height: 1.2; margin-bottom: 0.5em; }
+        p, li { font-size: 1.125rem; }
+        a { text-decoration: none; color: var(--color-accent-cta); }
+        a:hover, a:focus { color: var(--color-primary); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+        
+        /* Utility */
+        .text-center { text-align: center; }
+        .bg-light-gray { background-color: var(--color-light-gray); }
+        .section-padded { padding: 4rem 0; }
+
+        /* Buttons & CTAs */
+        .btn {
+            display: inline-block; padding: 1rem 2rem; min-height: 44px; min-width: 140px;
+            font-size: 1rem; font-weight: 700; text-align: center; border-radius: 8px;
+            cursor: pointer; transition: background-color 0.3s, color 0.3s; border: none;
+        }
+        .btn-primary {
+            background-color: var(--color-accent-cta); color: var(--color-white);
+            box-shadow: 0 4px 12px rgba(65, 131, 217, 0.4);
+        }
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: var(--color-accent-secondary); color: var(--color-primary);
+        }
+        
+        /* NEW: Secondary Button Style (for location cards) */
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-primary);
+            border: 2px solid var(--color-accent-cta);
+        }
+        .btn-secondary:hover, .btn-secondary:focus {
+            background-color: var(--color-accent-secondary);
+            color: var(--color-primary);
+            border-color: var(--color-accent-secondary);
+        }
+
+
+        /* HEADER */
+        header {
+            position: fixed; top: 0; left: 0; width: 100%; height: var(--header-height);
+            background-color: var(--color-primary); color: var(--color-white); z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; height: 100%; padding: 0 1rem; }
+        .logo a { font-size: 1.5rem; font-weight: 800; color: var(--color-white); display: flex; align-items: center; }
+        .logo a img { max-height: 40px; } 
+
+        .nav-menu { display: none; }
+        .header-cta-mobile {
+            background-color: var(--color-accent-cta); color: var(--color-white);
+            padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; min-height: 44px;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        /* ALERT BANNER */
+        .alert-banner {
+            background-color: var(--color-accent-cta);
+            color: var(--color-white);
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.9rem;
+            padding: 1rem;
+            line-height: 1.4;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            min-height: 70vh; display: flex;
+            align-items: center; position: relative; overflow: hidden; color: var(--color-white);
+        }
+        .hero-background {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+            background-color: #333; 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat; 
+        }
+        .hero-background::after {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(52, 126, 191, 0.6); /* TCC Dark Blue Overlay */
+        }
+        .hero-grid { 
+            display: grid; 
+            gap: 2rem; 
+            align-items: center; 
+            padding: 2rem 1rem; 
+            z-index: 10;
+        }
+        .hero-content-wrapper { 
+            background-color: rgba(52, 126, 191, 0.9); /* TCC Dark Blue Overlay */
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            text-align: center; 
+        }
+        .hero-tagline {
+            font-size: 1rem; font-weight: 600; margin-bottom: 1rem; padding: 0.5rem 1rem;
+            background: rgba(65, 131, 217, 0.9); /* TCC Main Blue */
+            display: inline-block; border-radius: 4px;
+        }
+       .hero h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 0.5rem; 
+            color: var(--color-white); 
+            text-align: center; 
+            text-transform: uppercase; 
+        }
+        .hero p { font-size: 1.125rem; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.85); }
+        
+
+        /* Hero Brand Card (Right Column) */
+        .brand-card {
+            background-color: var(--color-white);
+            color: var(--color-primary);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .brand-card-logo {
+            background-color: var(--color-white); /* Updated */
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: -4rem auto 1rem; /* Pulls it up */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid var(--color-white);
+        }
+        .brand-card-logo img {
+            width: 80px; 
+            height: auto; 
+            border-radius: 50%; /* Make square JPG a circle */
+        }
+        .brand-card h4 {
+            font-size: 1.75rem;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+        .brand-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        .brand-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2rem;
+            text-align: left;
+            display: inline-block; /* Center the list block */
+        }
+        .brand-card li {
+            font-size: 1rem;
+            font-weight: 500;
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.75rem;
+        }
+        .brand-card li::before {
+            content: '✓'; /* Checkmark */
+            color: var(--color-accent-cta);
+            position: absolute;
+            left: 0;
+            font-weight: 900;
+        }
+        .btn-card {
+            background-color: var(--color-accent-cta);
+            color: var(--color-white);
+            width: 100%; /* Full width */
+            font-size: 1.1rem;
+            padding: 1rem;
+        }
+        .btn-card:hover {
+            background-color: var(--color-accent-secondary);
+            color: var(--color-primary);
+        }
+
+        /* Social Media Icons in Brand Card */
+        .brand-card-socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem; /* Space between icons */
+            margin-top: 1.5rem; /* Space above the icons */
+        }
+        .social-link {
+            display: inline-block;
+        }
+        .social-link svg {
+            width: 28px; /* Icon size */
+            height: 28px; /* Icon size */
+            fill: var(--color-primary); /* Icon color */
+            transition: fill 0.3s ease;
+        }
+        .social-link:hover svg,
+        .social-link:focus svg {
+            fill: var(--color-accent-cta); /* Icon hover color */
+        }
+
+
+        /* TREATMENT PLANNING / ADMISSIONS */
+        .treatment-planning-full {
+            padding: 4rem 0;
+            background-color: var(--color-light-gray);
+            text-align: center; 
+        }
+        .treatment-planning-full h2 {
+            font-size: 2.2rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+        .treatment-planning-full p.slogan {
+            font-weight: 600; 
+            color: var(--color-accent-cta);
+            font-size: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto 2rem;
+        }
+        .treatment-planning-list {
+            list-style: none;
+            padding: 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .treatment-planning-list li {
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background-color: var(--color-white);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            text-align: left;
+            font-size: 1.125rem;
+        }
+        .treatment-planning-list li strong {
+            display: block;
+            font-size: 1.35rem;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+
+
+        /* LOCATION CARDS */
+        .locations-section {
+            padding: 4rem 0;
+            background-color: var(--color-white);
+        }
+        .all-locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            padding: 0;
+        }
+        .location-card {
+            background-color: var(--color-white);
+            border: 1px solid var(--color-light-gray);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            overflow: hidden; 
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: left;
+            display: flex; /* NEW: Added for flex-direction */
+            flex-direction: column; /* NEW: Added to stack content */
+        }
+        .location-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+        /* Image Wrapper for Location Card */
+        .location-card-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 140px; 
+        }
+        .location-card-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .location-card:hover .location-card-image-wrapper img {
+            transform: scale(1.05);
+        }
+        .location-card-header {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(52, 126, 191, 0.9); /* TCC Dark Blue Overlay */
+            color: var(--color-white);
+            padding: 0.5rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        .location-card-content {
+            padding: 1.5rem;
+            display: flex; /* NEW: Added for flex */
+            flex-direction: column; /* NEW: Added */
+            flex-grow: 1; /* NEW: Makes content fill card */
+        }
+        .location-card-content p.location-address {
+            font-size: 1rem; 
+            color: #555;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+            flex-grow: 1; /* NEW: Pushes buttons to bottom */
+        }
+        .location-card-content p.location-phone {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+        .location-card-content .btn {
+            display: block;
+            width: 100%;
+            margin-bottom: 0.5rem; /* Space between buttons */
+            text-align: center;
+            padding: 0.75rem 1rem; /* Smaller padding for card buttons */
+        }
+        .location-card-content .btn:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* CONTACT SECTION STYLES */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Mobile-first: 1 column */
+            gap: 2rem;
+            align-items: stretch; /* Make columns equal height */
+        }
+        .contact-info-box {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            padding: 2.5rem 2rem;
+            color: var(--color-white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #333; /* Fallback */
+            background-image: url('images/hero_tcc.jpg'); /* TCC Hero BG */
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+            z-index: 1;
+        }
+        .contact-info-box::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(52, 126, 191, 0.9); /* TCC Dark Blue Overlay */
+            z-index: -1;
+        }
+        .contact-info-box h3 {
+            font-size: 2rem;
+            color: var(--color-white);
+            margin-bottom: 1rem;
+        }
+        .contact-info-box p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+        }
+        .contact-info-box p.strong {
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--color-accent-secondary);
+            text-transform: uppercase; 
+            text-align: center; 
+        }
+
+        /* 2-Column Form Fields */
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr; /* Mobile-first */
+            gap: 1rem;
+        }
+        .form-row > div {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Form Consent Text */
+        .form-consent-text {
+            font-size: 0.85rem; /* Made slightly larger */
+            color: #777;
+            text-align: left; /* Aligned left */
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+        }
+
+        /* INSURANCE/SERVICES SECTION STYLES (RE-USED) */
+        .insurance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .insurance-card {
+            background-color: var(--color-white);
+            border: 1px solid var(--color-light-gray);
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .insurance-card h4 {
+            color: var(--color-primary);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--color-accent-cta);
+            padding-bottom: 0.5rem;
+        }
+        .insurance-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .insurance-card li {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .insurance-card li::before {
+            content: '✓';
+            color: var(--color-accent-cta);
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+        }
+        
+        /* Two-column list style for services */
+        .list-columns-2 {
+            columns: 2;
+            gap: 1rem;
+        }
+        /* Mobile override for column list */
+        @media (max-width: 500px) {
+            .list-columns-2 {
+                columns: 1;
+            }
+        }
+
+
+        /* FOOTER */
+        footer {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: var(--color-accent-secondary);
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: var(--color-white);
+        }
+        .footer-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .copyright {
+            margin-bottom: 1rem;
+        }
+
+        /* MEDICAL DISCLAIMER STYLES */
+        .medical-disclaimer {
+            margin: 2rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: left;
+            max-width: 900px;
+        }
+        .medical-disclaimer h4 {
+            font-size: 1rem;
+            color: var(--color-white);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        .medical-disclaimer p {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1rem;
+        }
+        .medical-disclaimer p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Visually Hidden Class for SEO/Accessibility */
+        .visually-hidden {
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
+
+        /* === UPDATED LOCATION CARD ADDRESS === */
+        .location-card-content p.location-address {
+            font-size: 0.95rem; 
+            color: #555;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+            flex-grow: 1; 
+        }
+        .location-card-content p.location-address span {
+            display: block; /* Forces street and city/state to new lines */
+        }
+/* === NEW ADMISSIONS GRID LAYOUT === */
+        .tcc-admissions-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Mobile-first */
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: flex-start;
+        }
+        .tcc-admissions-col-right {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem; /* Space between stacked cards */
+        }
+        .stacked-card {
+            background-color: var(--color-white);
+            border: 1px solid var(--color-light-gray);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .stacked-card h3 {
+            color: var(--color-primary);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--color-accent-cta);
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .tcc-admissions-grid {
+                grid-template-columns: 1fr 1fr; /* 2-column on desktop */
+            }
+        }
+        /* === END NEW ADMISSIONS GRID === */
+
+
+        /* === NEW RIDE HAILING LINKS === */
+        .location-card-content p.ride-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            text-align: center;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .ride-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+        .ride-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+            border-radius: 6px;
+            border: 2px solid var(--color-light-gray);
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        .ride-link:hover {
+            background-color: var(--color-light-gray);
+            border-color: var(--color-accent-cta);
+        }
+        .ride-link svg {
+            height: 24px;
+            width: auto;
+            fill: #000;
+        }
+        /* === END RIDE HAILING === */
+
+        /* Mobile-first adjustments */
+        @media (max-width: 767px) {
+            .hero-content-wrapper { 
+                text-align: center; 
+                padding-right: 0;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .brand-card {
+                order: -1; 
+                margin-bottom: 2rem;
+            }
+        }
+        
+        /* Tablet & Desktop Layout */
+        @media (min-width: 768px) {
+            .section-padded { padding: 6rem 0; }
+
+            /* Alert Banner Desktop Size */
+            .alert-banner {
+                font-size: 1rem;
+                padding: 1rem 2rem;
+            }
+
+            .hero-grid { 
+                grid-template-columns: 3fr 2fr; 
+            }
+            .hero { min-height: 80vh; }
+            .hero h1 { font-size: 4rem; }
+            .hero-content-wrapper { padding-right: 4rem; }
+            
+            .treatment-planning-full h2 { font-size: 3rem; }
+            .treatment-planning-full p.slogan { font-size: 1.75rem; }
+
+            .all-locations-grid {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns */
+                gap: 2rem;
+            }
+
+            /* Contact Form Grid @ Desktop */
+            .contact-grid {
+                grid-template-columns: 2fr 1.5fr; /* 2-col layout */
+                gap: 2.5rem;
+            }
+            .form-row {
+                grid-template-columns: 1fr 1fr; /* 2-col for fields */
+            }
+            .contact-info-box {
+                min-height: 100%; /* Stretches to match form height */
+            }
+
+            /* Insurance Card Columns (REMOVED - Not used for TCC) */
+        }
+        
+        /* Desktop (1024px +) */
+        @media (min-width: 1024px) {
+            .all-locations-grid { gap: 3rem; }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+
+    </head>
+<body>
+    
+    <header>
+        <div class="nav-content container">
+            <div class="logo">
+                <a href="#top" aria-label="The Counseling Center Homepage">
+                    <img src="images/white-stacked-no states.png" alt="The Counseling Center Logo">
+                    </a> 
+            </div>
+            
+            <a href="tel:866-850-5001" class="header-cta-mobile btn" role="button" aria-label="Call 24/7 Helpline">
+                Call 866-850-5001
+            </a>
+            
+            <nav class="nav-menu" aria-label="Site Navigation">
+                <a href="#admissions">Admissions</a>
+                <a href="#services">Services</a>
+                <a href="#locations-full">Locations</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation-menu" aria-label="Toggle navigation">
+                </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="alert-banner">
+            NEED HELP? CALL 24/7. WE'LL FIND THE RIGHT CARE, EVEN IF IT'S NOT WITH US.
+        </div>
+
+        <section class="hero" aria-label="Immediate outpatient help available">
+            <div class="hero-background" style="background-image: url('images/hero_tcc.jpg');"></div>
+            <div class="container hero-grid">
+                
+                <div class="hero-content-wrapper"> 
+
+                    <div class="hero-call-text-block hero-call-center">
+                        <a href="tel:866-850-5001" class="hero-phone-cta">866-850-5001</a>
+                        <p class="hero-confidential-text">All Calls Confidential</p>
+                    </div>
+                    
+                    <h1>Personal Outpatient Counseling for Addiction & Mental Health</h1> 
+                    
+                    <p style="margin-top: 2rem;">
+                        Whatever your goals in recovering from substance use, The Counseling Center is standing by to help. We'll uncover ways to cope with your individual difficulties and any related issues with group and individual therapy.
+                    </p>
+                    
+                    <a href="tel:866-850-5001" class="btn btn-primary" role="button" style="margin-top: 1rem;">
+                        Call Our 24/7 Help Center
+                    </a>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-card-logo">
+                        <img src="images/Stacked square _No Tagline blue.jpg" alt="The Counseling Center Logo Icon">
+                    </div>
+                    <h4>The Counseling Center</h4>
+                    <p>Outpatient Addiction & Mental Health</p> 
+                    <ul>
+                        <li>Outpatient Services</li>
+                        <li>Mental Health & Addiction</li>
+                        <li>Adolescent & Adult Programs</li>
+                        <li>Most Insurance Accepted</li>
+                    </ul>
+                    <a href="tel:866-850-5001" class="btn btn-card" role="button">
+                        Call 866-850-5001
+                    </a>
+
+                    <div class="brand-card-socials">
+                        <a href="#" class="social-link" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0C143.84 0 92.8 50.52 92.8 124.72v70.62H22.89V288h70.09v224h100.17V288h75.98z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Follow us on TikTok" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V209.9a210.1 210.1 0 0 1 210.8-82.3v70.1Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="admissions" class="section-padded bg-light-gray" aria-labelledby="admissions-heading">
+            
+            <div class="container">
+                <h1 id="admissions-heading" class="text-center">A Clear Path to Recovery</h1>
+                <p class="slogan text-center" style="font-size: 1.5rem; max-width: 900px; margin: 0 auto 2.5rem auto;">
+                    We’ve optimized our admissions procedure to make therapy more accessible. We'll help with insurance, scheduling, and any paperwork you need.
+                </p>
+            </div>
+
+            <div class="container tcc-admissions-grid">
+
+                <div class="tcc-admissions-col-left treatment-planning-full" style="padding: 0; text-align: left;">
+
+                    <ul class="treatment-planning-list" style="margin-left: 0; max-width: 100%;">
+                        <li>
+                            <strong>Comprehensive Assessment:</strong>
+                            Your journey begins with a thorough personal evaluation—either in-person or via telehealth—to understand your history and craft a personalized care plan.
+                        </li>
+                        <li>
+                            <strong>Insurance & Payment Support:</strong>
+                            Our team will work with your insurer to maximize your coverage. We accept most commercial insurance and will clarify all your billing options upfront.
+                        </li>
+                        <li>
+                            <strong>Support for Work & Life:</strong>
+                            We can assist with all necessary paperwork for FMLA, short-term disability, or employer/EAP coordination so you can focus on your treatment.
+                        </li>
+                    </ul>
+
+                    <div style="margin-top: 2rem;">
+                         <a href="tel:866-850-5001" class="btn btn-primary" role="button">
+                            Call 866-850-5001
+                        </a>
+                    </div>
+                </div>
+
+                <div id="services" class="tcc-admissions-col-right">
+                    
+                    <article class="stacked-card" aria-labelledby="services-heading">
+                        <h3 id="services-heading">Counseling Services</h3>
+                        <ul class="list-columns-2 insurance-card" style="border: 0; box-shadow: none; padding: 0;">
+                            <li>Mental Health Services</li>
+                            <li>Individual Counseling</li>
+                            <li>Group Counseling</li>
+                            <li>Family Counseling</li>
+                            <li>Psychiatric Care</li>
+                            <li>Medication Management</li>
+                            <li>Telehealth</li>
+                        </ul>
+                    </article>
+
+                    <article id="programs" class="stacked-card" aria-labelledby="programs-heading">
+                        <h3 id="programs-heading">Treatment Programs</h3>
+                         <ul class="list-columns-2 insurance-card" style="border: 0; box-shadow: none; padding: 0;">
+                            <li>Spravato Treatment</li>
+                            <li>Medication-Assisted Treatment</li>
+                            <li>Substance Abuse IOP</li>
+                            <li>Mental Health IOP</li>
+                            <li>Outpatient Substance Abuse Treatment</li>
+                            <li>Adolescent Treatment</li>
+                            <li>Partial Hospitalization Program</li>
+                            <li>Veterans Program</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="locations-full" class="locations-section" aria-labelledby="all-locations-heading">
+            <div class="container">
+                <h2 id="all-locations-heading" class="text-center">Our 14 Counseling Center Locations</h2>
+                <p class="text-center" style="margin-bottom: 2rem;">Convenient outpatient help is available near you in NJ, GA, MA, and NY.</p>
+                
+                <div class="all-locations-grid">
+                    
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/TCCMiddlesex-857.jpg" class="lazy-load" alt="The Counseling Center at Middlesex, NJ" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">Middlesex, NJ</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>127 Union Ave, Suite 1</span>
+                                <span>Middlesex, NJ 08846</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:732-893-2000">(732) 893-2000</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=127+Union+Ave+Suite+1+Middlesex+NJ+08846" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=127+Union+Ave+Suite+1+Middlesex+NJ+08846" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=127+Union+Ave+Suite+1+Middlesex+NJ+08846" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for Middlesex, NJ and surrounding towns including Dunellen, South Plainfield, Piscataway, Edison, and South Brunswick. We serve zip codes 08846, 08812, 08817, 08820, 08837, 08854, 08873, 08875, 08901.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/TCCRobbinsville-859.jpg" class="lazy-load" alt="The Counseling Center at Robbinsville, NJ" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">Robbinsville, NJ</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>691 US-130 N</span>
+                                <span>Robbinsville, NJ 08691</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:609-759-2070">(609) 759-2070</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=691+US-130+N+Robbinsville+NJ+08691" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=691+US-130+N+Robbinsville+NJ+08691" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=691+US-130+N+Robbinsville+NJ+08691" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for Robbinsville, NJ and surrounding towns including Hamilton, Trenton, East Windsor, and West Windsor. We serve zip codes 08691, 08520, 08540, 08550, 08601, 08609, 08610, 08611, 08619, 08690.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/DuluthTCCthumbnail-865.jpg" class="lazy-load" alt="The Counseling Center at Duluth, GA" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">Duluth, GA</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>4191 Pleasant Hill Road, Suite 100</span>
+                                <span>Duluth, GA 30096</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:470-704-5010">(470) 704-5010</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=4191+Pleasant+Hill+Road+Suite+100+Duluth+GA+30096" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=4191+Pleasant+Hill+Road+Suite+100+Duluth+GA+30096" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=4191+Pleasant+Hill+Road+Suite+100+Duluth+GA+30096" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for Duluth, GA and surrounding Gwinnett County towns including Lawrenceville, Suwanee, Norcross, Lilburn, and Peachtree Corners. We serve zip codes 30096, 30097, 30095, 30098, 30099, 30043, 30044, 30024, 30071.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/TCCMillbury.jpg" class="lazy-load" alt="The Counseling Center at Millbury, MA" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">Millbury, MA</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>29 Main Street</span>
+                                <span>Millbury, MA 01527</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:201-389-5326">(201) 389-5326</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=29+Main+Street+Millbury+MA+01527" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=29+Main+Street+Millbury+MA+01527" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=29+Main+Street+Millbury+MA+01527" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for Millbury, MA and surrounding Worcester-area towns including Auburn, Grafton, Sutton, Northbridge, and Worcester. We serve zip codes 01527, 01586, 01602, 01603, 01604, 01605, 01606, 01607, 01501, 01519, 01536.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/TCCRoswell-860.jpg" class="lazy-load" alt="The Counseling Center at Roswell, GA" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">Roswell, GA</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>419 E. Crosville Road, Suite 105</span>
+                                <span>Roswell, GA 30075</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:470-704-5080">(470) 704-5080</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=419+E.+Crosville+Road+Suite+105+Roswell+GA+30075" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=419+E+Crosville+Road+Suite+105+Roswell+GA+30075" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=419+E+Crosville+Road+Suite+105+Roswell+GA+30075" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for Roswell, GA and surrounding North Fulton towns including Alpharetta, Milton, Johns Creek, and Sandy Springs. We serve zip codes 30075, 30076, 30077, 30004, 30005, 30009, 30022, 30328, 30350.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/TCCRoxbury-861.jpg" class="lazy-load" alt="The Counseling Center at Roxbury, NJ" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">Roxbury, NJ</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>66 Sunset Strip, Suite 302</span>
+                                <span>Roxbury Township, NJ 07876</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:732-893-2000">(732) 893-2000</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=66+Sunset+Strip+Suite+302+Roxbury+Township+NJ+07876" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=66+Sunset+Strip+Suite+302+Roxbury+Township+NJ+07876" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=66+Sunset+Strip+Suite+302+Roxbury+Township+NJ+07876" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for Roxbury Township, NJ and surrounding Morris County towns including Succasunna, Ledgewood, Kenvil, Randolph, and Mount Arlington. We serve zip codes 07876, 07850, 07852, 07869, 07801, 07836, 07856.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/TCCWestCaldwell-862.jpg" class="lazy-load" alt="The Counseling Center at West Caldwell, NJ" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">West Caldwell, NJ</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>1120 Bloomfield Avenue, Suite 201</span>
+                                <span>West Caldwell, NJ 07006</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:973-453-0808">(973) 453-0808</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=1120+Bloomfield+Avenue+Suite+201+West+Caldwell+NJ+07006" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=1120+Bloomfield+Avenue+Suite+201+West+Caldwell+NJ+07006" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=1120+Bloomfield+Avenue+Suite+201+West+Caldwell+NJ+07006" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for West Caldwell, NJ and surrounding Essex County towns including Caldwell, Cedar Grove, Essex Fells, Fairfield, Montclair, and Verona. We serve zip codes 07006, 07004, 07007, 07009, 07021, 07028, 07039, 07042, 07043, 07044.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/tccfairlawn-854.jpg" class="lazy-load" alt="The Counseling Center at Fair Lawn, NJ" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">Fair Lawn, NJ</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>16-01 Broadway</span>
+                                <span>Fair Lawn, NJ 07410</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:785-874-5244">(785) 874-5244</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=16-01+Broadway+Fair+Lawn+NJ+07410" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=16-01+Broadway+Fair+Lawn+NJ+07410" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=16-01+Broadway+Fair+Lawn+NJ+07410" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for Fair Lawn, NJ and surrounding Bergen County towns including Paterson, Glen Rock, Ridgewood, and Paramus. We serve zip codes 07410, 07501, 07502, 07503, 07504, 07505, 07450, 07452, 07652, 07653.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/tccfreehold-856.jpg" class="lazy-load" alt="The Counseling Center at Freehold, NJ" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">Freehold, NJ</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>4345 US Highway 9 North, Suite 28</span>
+                                <span>Freehold, NJ 07728</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:732-431-5300">(732) 431-5300</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=4345+US+Highway+9+North+Suite+28+Freehold+NJ+07728" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=4345+US+Highway+9+North+Suite+28+Freehold+NJ+07728" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=4345+US+Highway+9+North+Suite+28+Freehold+NJ+07728" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for Freehold, NJ and surrounding Monmouth County towns including Marlboro, Manalapan, Howell, and Old Bridge. We serve zip codes 07728, 07719, 07726, 07727, 07731, 07746, 07747, 07751, 07753.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/TCCTomsRiver-855.jpg" class="lazy-load" alt="The Counseling Center at Toms River, NJ" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">Toms River, NJ</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>1198 Lakewood Road, Suite 101</span>
+                                <span>Toms River, NJ 08753</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:732-736-6559">(732) 736-6559</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=1198+Lakewood+Road+Suite+101+Toms+River+NJ+08753" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=1198+Lakewood+Road+Suite+101+Toms+River+NJ+08753" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=1198+Lakewood+Road+Suite+101+Toms+River+NJ+08753" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for Toms River, NJ and surrounding Ocean County towns including Brick, Lakewood, Seaside Heights, and Point Pleasant. We serve zip codes 08753, 08754, 08755, 08756, 08757, 08701, 08721, 08722, 08723, 08724, 08742, 08751.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/ClarkCounselingCenterthumbnail-864.jpg" class="lazy-load" alt="The Counseling Center at Clark, NJ" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">Clark, NJ</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>60 Walnut Ave, Suite 201</span>
+                                <span>Clark, NJ 07066</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:732-882-1920">(732) 882-1920</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=60+Walnut+Ave+Suite+201+Clark+NJ+07066" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=60+Walnut+Ave+Suite+201+Clark+NJ+07066" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=60+Walnut+Ave+Suite+201+Clark+NJ+07066" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for Clark, NJ and surrounding Union County towns including Westfield, Cranford, Linden, Rahway, and Woodbridge. We serve zip codes 07066, 07016, 07027, 07036, 07065, 07076, 07090.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/TCCCherryHill.jpg" class="lazy-load" alt="The Counseling Center at Cherry Hill, NJ" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">Cherry Hill, NJ</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>950 N Kings Highway, Suite 304</span>
+                                <span>Cherry Hill, NJ 08034</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:866-850-5001">Call Admissions</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=950+N+Kings+Highway+Suite+304+Cherry+Hill+NJ+08034" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=950+N+Kings+Highway+Suite+304+Cherry+Hill+NJ+08034" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=950+N+Kings+Highway+Suite+304+Cherry+Hill+NJ+08034" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for Cherry Hill, NJ and surrounding towns including Camden, Pennsauken, Maple Shade, Marlton, and Collingswood. We serve zip codes 08034, 08002, 08003, 08101, 08102, 08103, 08104, 08105, 08108, 08109, 08110, 08052.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/TCCMonmouthJunction-858.jpg" class="lazy-load" alt="The Counseling Center at Monmouth Junction, NJ" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">Monmouth Jct, NJ</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>1100 Cornwall Road, Suite 111</span>
+                                <span>Monmouth Junction, NJ 08852</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:732-893-2000">(732) 893-2000</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=1100+Cornwall+Road+Suite+111+Monmouth+Junction+NJ+08852" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=1100+Cornwall+Road+Suite+111+Monmouth+Junction+NJ+08852" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=1100+Cornwall+Road+Suite+111+Monmouth+Junction+NJ+08852" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for Monmouth Junction, NJ and surrounding towns including South Brunswick, Plainsboro, Dayton, and New Brunswick. We serve zip codes 08852, 08540, 08810, 08816, 08823, 08824, 08901.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="location-card">
+                        <div class="location-card-image-wrapper">
+                            <img data-src="images/TCCYorktownHeights-863.jpg" class="lazy-load" alt="The Counseling Center at Yorktown Heights, NY" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div class="location-card-header">Yorktown Heights, NY</div>
+                        </div>
+                        <div class="location-card-content">
+                            <p class="location-address">
+                                <span>2000 Maple Hill Street, Suite 101</span>
+                                <span>Yorktown Heights, NY 10598</span>
+                            </p>
+                            <p class="location-phone"><strong>Phone:</strong> <a href="tel:914-977-0608">(914) 977-0608</a></p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=2000+Maple+Hill+Street+Suite+101+Yorktown+Heights+NY+10598" target="_blank" class="btn btn-primary location-card-cta">Get Directions</a>
+                            <p class="ride-title">Request a Ride</p>
+                            <div class="ride-links">
+                                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=2000+Maple+Hill+Street+Suite+101+Yorktown+Heights+NY+10598" target="_blank" class="ride-link" aria-label="Request a ride with Uber">
+                                    <svg viewBox="0 0 256 256" fill="#000000"><path d="M211.314 133.028c-2.42-3.13-5.26-5.83-8.42-7.98-29.04-19.74-63.63-31.54-100.99-31.54-37.37 0-71.95 11.8-100.99 31.54-3.17 2.15-5.99 4.85-8.42 7.98C-3.1 169.328-3.1 213.6 1.8 231.18c.06.21.14.42.21.63 2.22 6.57 28.97 24.19 123.9 24.19s121.68-17.62 123.9-24.19c.07-.21.15-.42.21-.63 4.9-17.58 4.9-61.85-10.71-98.15zM89.3 171.13c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zm77.4 0c-7.83 0-14.17-6.34-14.17-14.17s6.34-14.17 14.17-14.17 14.17 6.34 14.17 14.17-6.34 14.17-14.17 14.17zM245.82 24.18C226.79 8.01 200.7 0 172.9 0h-89.8C55.3 0 29.2 8.01 10.18 24.18-5.32 39.09-5.32 65.59 10.18 80.5c15.5 14.9 41.6 23.01 69.4 23.01h89.8c27.8 0 53.9-8.11 69.4-23.01 15.5-14.91 15.5-41.41-10.16-56.32z"></svg>
+                                </a>
+                                <a href="https://www.lyft.com/ride-with-lyft?destination=2000+Maple+Hill+Street+Suite+101+Yorktown+Heights+NY+10598" target="_blank" class="ride-link" aria-label="Request a ride with Lyft">
+                                    <svg viewBox="0 0 24 24" fill="#FF00BF"><path d="M21.1 12.6C19 11.5 17.4 9.2 17.4 6.7C17.4 3 14.4 0 10.8 0C7.1 0 4.1 3 4.1 6.7C4.1 9.2 2.5 11.5 0.4 12.6C0.2 12.7 0 13 0 13.4V16.9C0 17.3 0.2 17.6 0.5 17.7C1.4 18.2 2.8 18.6 4.4 18.6C4.8 18.6 5.1 18.3 5.1 17.9V14.8C5.1 14.4 5.4 14.1 5.8 14.1H15.6C16 14.1 16.3 14.4 16.3 14.8V17.9C16.3 18.3 16.6 18.6 17 18.6C18.6 18.6 20 18.2 20.9 17.7C21.2 17.6 21.4 17.3 21.4 16.9V13.4C21.4 13 21.2 12.7 21.1 12.6ZM8 7.3C8 6.6 8.5 6 9.3 6C10 6 10.6 6.6 10.6 7.3C10.6 8.1 10.1 8.7 9.3 8.7C8.5 8.7 8 8.1 8 7.3ZM12.2 8.7C11.4 8.7 10.8 8.1 10.8 7.3C10.8 6.6 11.4 6 12.2 6C12.9 6 13.5 6.6 13.5 7.3C13.5 8.1 12.9 8.7 12.2 8.7Z M24 12.2C22.6 11.6 21.4 10.3 21.4 8.7C21.4 6.1 19.3 4 16.7 4C14.1 4 12 6.1 12 8.7C12 10.3 10.8 11.6 9.4 12.2C9.2 12.3 9 12.6 9 12.9V16.9C9 17.3 9.2 17.6 9.5 17.7C10.4 18.2 11.8 18.6 13.4 18.6C13.8 18.6 14.1 18.3 14.1 17.9V14.8C14.1 14.4 14.4 14.1 14.8 14.1H18.6C19 14.1 19.3 14.4 19.3 14.8V17.9C19.3 18.3 19.6 18.6 20 18.6C21.6 18.6 23 18.2 23.9 17.7C24.2 17.6 24.4 17.3 24.4 16.9V12.9C24.4 12.6 24.2 12.3 24 12.2Z"/></svg>
+                                </a>
+                            </div>
+                            <p class="visually-hidden">
+                                Outpatient counseling services for Yorktown Heights, NY and surrounding Westchester County towns including Cortlandt, Mount Kisco, Ossining, and Croton-on-Hudson. We serve zip codes 10598, 10502, 10511, 10520, 10521, 10547, 10549, 10562, 10566, 10567.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="tel:866-850-5001" class="btn btn-primary" role="button">
+                        Call 866-850-5001
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padded bg-light-gray" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="text-center">Get Help Today: Admissions for Substance Use & Mental Health</h2>
+                
+                <div class="contact-grid">
+                    
+                    <div class="contact-form-wrapper">
+                        <h3>Send Us a Confidential Message</h3>
+                        <form id="contact-form" action="[FORMSPREE_OR_SERVER_ENDPOINT]" method="POST">
+                            
+                            <div class="form-row">
+                                <div>
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" name="first-name" required placeholder="John">
+                                </div>
+                                <div>
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" name="last-name" required placeholder="Doe">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div>
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="(555) 555-5555">
+                                </div>
+                                <div>
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="john.doe@example.com">
+                                </div>
+                            </div>
+
+                            <p class="form-consent-text">
+                                By submitting, you authorize The Counseling Center to reach out via phone, email, or text. You may opt-out at any time. Message/data rates apply. Consent is not a condition of admission.
+                            </p>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Secure Inquiry</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-box">
+                        <h3>Need Help Now?</h3>
+                        <p>Have a question about insurance policies and costs? Our accommodating staff is glad to assist. We’ll gather your insurance details and get together with your insurer to get as much of your care paid for as possible.</p>
+                        <p class="strong">
+                            The Counseling Center welcomes most commercial insurance policies. At present, we are unable to accept Medicaid. Please call for more information about Medicare policies.
+                        </p>
+                        <a href="tel:866-850-5001" class="btn btn-primary" style="margin-top: 1.5rem;">Call 866-850-5001 For Immediate Help</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p class="copyright">© <span id="current-year">2024</span> Praesum Healthcare. All Rights Reserved.</p>
+            <img src="images/white-stacked-no states.png" alt="The Counseling Center Logo" style="max-height: 50px; margin-top: 1rem;">
+
+            <div class="medical-disclaimer">
+                <h4>Medical Disclaimer</h4>
+                <p>
+                    The content of this website is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Website text, graphics, videos, images, and other content are for informational purposes only. Never use the contents of this website as a substitute for the advice of a doctor. Always consult a physician if you have questions or concerns about health matters, including any drugs, supplements, maladies or remedies mentioned.
+                </p>
+                <p>
+                    Descriptions and reports on products or services mentioned on this website should not be considered endorsements nor recommendations. If you have a medical emergency, call 911 or a doctor immediately. If you have concerns about suicide, please call or text 988.
+                </S>
+            </div>
+            </div>
+    </footer>
+
+    <script src="script.js" defer></script> 
+</body>
+</html>
