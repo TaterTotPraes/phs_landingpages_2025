@@ -11,13 +11,12 @@
     <meta name="robots" content="noindex, nofollow">
 
     <link rel="canonical" href="https://www.sunrisedetox.com/orlando_florida">
-    
+    <link rel="icon" type="image/png" href="../../images/Sunrise_Logo.png">
     <meta property="og:title" content="Sunrise Detox at Orlando | +1-407-857-6117">
     <meta property="og:description" content="24/7 medical detox in Orlando. Confidential help available now.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.sunrisedetox.com/orlando_florida">
     <meta property="og:image" content="https://www.sunrisedetox.com/images/sdc_orlando.jpg">
-    <link rel="icon" type="image/png" href="../../images/sunrisedetoxlogo-favicon.png"> 
 
     <script type="text/javascript" src="https://services.legitscript.com/api/token.js" data-token="YOUR_UNIQUE_LEGITSCRIPT_TOKEN" data-name="platform-verification"></script>
 
@@ -49,6 +48,7 @@
             padding-top: var(--header-height); /* Pushes ALL content down below the fixed header */
         }
         h1, h2, h3 { line-height: 1.2; margin-bottom: 0.5em; }
+        h4, h5 { line-height: 1.2; margin: 1.5rem 0 0.5rem; }
         p, li { font-size: 1.125rem; }
         a { text-decoration: none; color: var(--color-accent-cta); }
         a:hover, a:focus { color: var(--color-primary); }
@@ -149,118 +149,6 @@
         .hero-locations-pipe-list a:hover {
             color: var(--color-white);
         }
-        .treatment-planning-full {
-            padding: 4rem 0;
-            background-color: var(--color-light-gray);
-            text-align: center; 
-        }
-        .treatment-planning-full h2 {
-            font-size: 2.2rem;
-            color: var(--color-primary);
-            margin-bottom: 1rem;
-        }
-        .treatment-planning-full p.slogan {
-            font-weight: 600; 
-            color: var(--color-accent-cta);
-            font-size: 1.5rem;
-            max-width: 900px;
-            margin: 0 auto 2rem;
-        }
-        .treatment-planning-list {
-            list-style: none;
-            padding: 0;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .treatment-planning-list li {
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            background-color: var(--color-white);
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            text-align: left;
-            font-size: 1.125rem;
-        }
-        .treatment-planning-list li strong {
-            display: block;
-            font-size: 1.35rem;
-            color: var(--color-primary);
-            margin-bottom: 0.5rem;
-        }
-        .locations-section {
-            padding: 4rem 0;
-            background-color: var(--color-white);
-        }
-        .all-locations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-            padding: 0;
-        }
-        .location-card {
-            background-color: var(--color-white);
-            border: 1px solid var(--color-light-gray);
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-            overflow: hidden; 
-            transition: transform 0.2s, box-shadow 0.2s;
-            text-align: left;
-        }
-        .location-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
-        }
-        .location-card-image-wrapper {
-            position: relative;
-            overflow: hidden;
-            height: 140px;
-        }
-        .location-card-image-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s;
-        }
-        .location-card:hover .location-card-image-wrapper img {
-            transform: scale(1.05);
-        }
-        .location-card-header {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(13, 25, 64, 0.9);
-            color: var(--color-white);
-            padding: 0.5rem 1.5rem;
-            font-size: 1.1rem;
-            font-weight: 700;
-        }
-        .location-card-content {
-            padding: 1.5rem;
-        }
-        .location-card-content p {
-            font-size: 0.95rem; 
-            color: #555;
-            margin-bottom: 0.75rem;
-            line-height: 1.4;
-        }
-        .location-card-rating {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--color-primary);
-            margin-bottom: 1rem;
-        }
-        .location-card-rating span {
-            color: gold; 
-            margin-right: 5px;
-            font-size: 1.2em;
-        }
-        .location-card-cta {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            font-size: 0.95rem;
-        }
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -350,7 +238,7 @@
         }
         .insurance-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: 1fr;
             gap: 1.5rem;
             margin-top: 2rem;
         }
@@ -433,15 +321,14 @@
         .medical-disclaimer p:last-child {
             margin-bottom: 0;
         }
-
-        /* NEW: Map Iframe Wrapper */
         .map-embed-wrapper {
             position: relative;
             width: 100%;
-            height: 450px; /* Default height */
+            height: 450px;
             overflow: hidden;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-top: 3rem; /* Matched Evolve template */
         }
         .map-embed-wrapper iframe {
             position: absolute;
@@ -451,6 +338,22 @@
             height: 100%;
             border: 0;
         }
+        .areas-served-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .areas-served-list li {
+            font-size: 0.9rem;
+            background-color: var(--color-white);
+            border: 1px solid #ddd;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+        }
+
 
         @media (max-width: 767px) {
             .hero-content-wrapper { 
@@ -459,10 +362,6 @@
             }
             .hero-grid {
                 grid-template-columns: 1fr;
-            }
-            .brand-card {
-                order: -1; 
-                margin-bottom: 2rem;
             }
         }
         
@@ -473,22 +372,15 @@
                 padding: 1rem 2rem;
             }
             .hero-grid { 
-                /* UPDATED: Location page hero is 1-column */
                 grid-template-columns: 1fr; 
-                max-width: 900px; /* Constrain content */
+                max-width: 900px;
                 margin: 0 auto;
             }
             .hero { min-height: 80vh; }
             .hero h1 { font-size: 4rem; }
             .hero-content-wrapper { padding-right: 2rem; }
-            .treatment-planning-full h2 { font-size: 3rem; }
-            .treatment-planning-full p.slogan { font-size: 1.75rem; }
-            .all-locations-grid {
-                grid-template-columns: repeat(3, 1fr); 
-                gap: 2rem;
-            }
             .contact-grid {
-                grid-template-columns: 2fr 1.5fr;
+                grid-template-columns: 1.5fr 1fr;
                 gap: 2.5rem;
             }
             .form-row {
@@ -501,14 +393,20 @@
                 columns: 2;
                 gap: 1rem;
             }
-            /* NEW: Map wrapper desktop height */
             .map-embed-wrapper {
-                height: 100%; /* Fill the grid column */
-                min-height: 500px;
+                height: 500px;
+            }
+            .location-insurance-grid {
+                display: grid; /* NEW: Use grid for this */
+                grid-template-columns: 1fr 1fr;
+                gap: 2.5rem;
+                align-items: flex-start;
             }
         }
         @media (min-width: 1024px) {
-            .all-locations-grid { gap: 3rem; }
+            .contact-grid {
+                grid-template-columns: 2fr 1fr;
+            }
         }
     </style>
     <link rel="stylesheet" href="../../style.css" media="print" onload="this.media='all'">
@@ -561,9 +459,9 @@
     <header>
         <div class="nav-content container">
             <div class="logo">
-                <a href="https{COLON}//www.sunrisedetox.com/" aria-label="Sunrise Detox Homepage">
+                <a href="../../index.html" aria-label="Sunrise Detox Homepage">
                     <img src="../../images/Sunrise_Logo_white.png" alt="Sunrise Detox Logo Icon">
-                    <span style="margin-left: 0.5rem;">SUNRISE DETOX</span>
+    
                 </a> 
             </div>
             
@@ -572,9 +470,9 @@
             </a>
             
             <nav class="nav-menu" aria-label="Site Navigation">
-                <a href="https{COLON}//www.sunrisedetox.com/#locations-full">Our Locations</a>
-                <a href="https{COLON}//www.sunrisedetox.com/#insurance">Insurance Accepted</a>
-                <a href="https{COLON}//www.sunrisedetox.com/#treatment-planning">Treatment Planning</a>
+                <a href="../../index.html#locations-full">Our Locations</a>
+                <a href="../../index.html#insurance">Insurance Accepted</a>
+                <a href="tel:8669894252" class="btn btn-primary gtm-track-call" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-left: 1rem; vertical-align: middle;">Call 866-989-4252</a>
             </nav>
             
             <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation-menu" aria-label="Toggle navigation">
@@ -589,6 +487,7 @@
 
         <section class="hero" aria-label="Sunrise Detox at Orlando Detox Care">
             <div class="hero-background" style="background-image: url('https://www.sunrisedetox.com/images/sdc_orlando.jpg');"></div>
+        
             <div class="container hero-grid">
                 
                 <div class="hero-content-wrapper"> 
@@ -616,9 +515,12 @@
             </div>
         </section>
 
-        <section id="location-details" class="section-padded" aria-labelledby="location-details-heading">
+        <section id="location-details" class="section-padded bg-light-gray" aria-labelledby="location-details-heading">
             <div class="container">
-                <div class="contact-grid"> <div class="location-info-content">
+                
+                <div class="location-insurance-grid"> 
+                    
+                    <div class="location-info-wrapper">
                         <h2 id="location-details-heading">Visit Our Orlando Facility</h2>
                         <p>We are conveniently located to serve the Orlando community and beyond. Our team is ready to welcome you 24/7.</p>
                         
@@ -635,155 +537,77 @@
                         <a href="https://maps.app.goo.gl/vS87WZP8NXVeUSt98" target="_blank" class="btn btn-primary" style="margin-top: 1.5rem;">
                             Get Directions & See Reviews
                         </a>
+
+                        <div class="areas-served" style="margin-top: 2rem;">
+                            <h4>We serve the following areas:</h4>
+                            
+                            <h5>Nearby Communities:</h5>
+                            <ul class="areas-served-list">
+                                <li>Orlando</li>
+<li>Kissimmee</li>
+<li>Winter Park</li>
+<li>Sanford</li>
+<li>Lake Buena Vista</li>
+<li>Ocoee</li>
+<li>Altamonte Springs</li>
+<li>Apopka</li>
+                            </ul>
+
+                            <h5 style="margin-top: 1.5rem;">Nearby Zip Codes:</h5>
+                            <ul class="areas-served-list">
+                                <li>32809</li>
+<li>34741</li>
+<li>34744</li>
+<li>32789</li>
+<li>32792</li>
+<li>32771</li>
+<li>32830</li>
+<li>34746</li>
+<li>32703</li>
+<li>32714</li>
+                            </ul>
+                        </div>
+                        </div>
+
+                    <div id="insurance" class="location-insurance-wrapper">
+                        <h2 style="margin-bottom: 1rem;">Insurance Accepted at Sunrise Detox at Orlando</h2>
+                        <p>
+                            We are in-network with most insurance plans. Call <a href="tel:866-750-8588" class="gtm-track-call" style="font-weight: 700;">866-750-8588</a> for a free, immediate insurance verification.
+                        </p>
+                        
+                        <div class="insurance-grid">
+                            <article class="insurance-card">
+                                <h4>Sunrise Detox Orlando, FL</h4>
+                                <ul class="insurance-card-list">
+                                    <li>Aetna</li>
+<li>Ambetter</li>
+<li>American Behavioral</li>
+<li>Beacon Health Options/GHI Network</li>
+<li>Humana</li>
+<li>Lower Hudson Valley EAP</li>
+<li>Magellan</li>
+<li>MagnaCare</li>
+<li>MultiPlan</li>
+<li>OptimServe</li>
+<li>Three Rivers Provider Network</li>
+<li>Workforce Assistance</li>
+                                </ul>
+                            </article>
+                        </div>
                     </div>
 
-                    <div class="map-embed-wrapper">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.9220498116792!2d-81.4155888!3d28.4517661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77c326119919b%3A0x15884ff7dc2c568a!2sSunrise%20Detox%20-%20Orlando%20Drug%20%26%20Alcohol%20Detox!5e0!3m2!1sen!2sus!4v1762035585941!5m2!1sen!2sus" 
-                            width="600" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-
+                </div> <div class="map-embed-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.4485351909284!2d-84.26634639999999!3d34.0580145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59fd699e12a89%3A0x4039315f9808ada1!2sSunrise%20Detox%20-%20Alpharetta%20Drug%20%26%20Alcohol%20Detox!5e0!3m2!1sen!2sus!4v1762035479694!5m2!1sen!2susS" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
-            </div>
-        </section>
 
-        <section class="image-cards-section" aria-labelledby="facility-gallery-heading">
-            <div class="container">
-                <h2 id="facility-gallery-heading" class="text-center">Our Welcoming Environment</h2>
-                <p class="text-center" style="margin-bottom: 2rem;">Experience comfort and care at Sunrise Detox at Orlando.</p>
-
-                <div class="image-cards-grid">
-                    <article class="image-card">
-                        <img data-src="../../images/SunriseOrlandoLiving-1000x660.jpg" class="lazy-load" alt="Comfortable living area at Sunrise Detox" width="1000" height="660" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                        <div class="image-card-content">
-                            <h3>Comfortable Living Spaces</h3>
-                            <p>Relax and heal in our serene and well-appointed common areas.</p>
-                            <a href="tel:+1-407-857-6117" class="gtm-track-call">Call Us Now →</a>
-                        </div>
-                    </article>
-                    <article class="image-card">
-                        <img data-src="../../images/SunriseOrlandoOneBedroom-1000x660.jpg" class="lazy-load" alt="Private bedroom at Sunrise Detox" width="1000" height="660" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                        <div class="image-card-content">
-                            <h3>Private Rooms Available</h3>
-                            <p>Individualized comfort with options for private and semi-private accommodations.</p>
-                            <a href="tel:+1-407-857-6117" class="gtm-track-call">Call Us Now →</a>
-                        </div>
-                    </article>
-                    <article class="image-card">
-                        <img data-src="../../images/SunriseOrlandoTwoBedroom-1000x660.jpg" class="lazy-load" alt="Spacious bedroom at Sunrise Detox" width="1000" height="660" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                        <div class="image-card-content">
-                            <h3>A Peaceful Place to Heal</h3>
-                            <p>Our facilities are designed to promote peace, safety, and recovery.</p>
-                            <a href="tel:+1-407-857-6117" class="gtm-track-call">Call Us Now →</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="treatment-planning" class="treatment-planning-full" aria-labelledby="treatment-planning-heading">
-            <div class="container">
-                <h2 id="treatment-planning-heading">Your Personalized Treatment Planning Starts Here</h2>
-                <p class="slogan">
-                    We see your recovery as a journey, not a destination. Our goal is to safely transition you from detox to long-term sobriety, starting with a comprehensive plan built just for you.
-                </p>
-                <ul class="treatment-planning-list">
-                    <li>
-                        <strong>Comprehensive Assessment:</strong> Every recovery journey begins with a thorough medical and psychological evaluation. We identify your specific needs, substance history, and any co-occurring disorders to craft an individualized care plan.
-                    </li>
-                    <li>
-                        <strong>Medically-Supervised Stabilization:</strong> The detox phase is managed by licensed medical professionals who utilize evidence-based protocols and medications to minimize discomfort and ensure a safe withdrawal process.
-                    </li>
-                    <li>
-                        <strong>Creating a Continuum of Care:</strong> Detox is only the first step. Before you leave, our specialists work with you to secure placement in a long-term treatment facility, ensuring a seamless transition and sustained sobriety.
-                    </li>
-                </ul>
-                <div class="text-center" style="margin-top: 2rem;">
-                     <a href="tel:+1-407-857-6117" class="btn btn-primary gtm-track-call" role="button">
-                        Call Us Now
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="insurance" class="section-padded">
-            <div class="container">
-                <h2 class="text-center" style="margin-bottom: 1rem;">Insurance Accepted at Sunrise Detox at Orlando</h2>
-                <p class="text-center" style="max-width: 800px; margin: 0 auto 2rem auto; font-size: 1.1rem;">
-                    We are in-network with most insurance plans. Call <a href="tel:866-750-8588" class="gtm-track-call" style="font-weight: 700;">866-750-8588</a> for a free, immediate insurance verification.
-                </p>
-                
-                <div class="insurance-grid" style="justify-content: center;">
-                    
-                    <article class="insurance-card">
-                        <h4>Sunrise Detox Orlando, FL</h4>
-                        <ul>
-                            <li>Aetna</li>
-                            <li>Ambetter</li>
-                            <li>American Behavioral</li>
-                            <li>Beacon Health Options/GHI Network</li>
-                            <li>Humana</li>
-                            <li>Lower Hudson Valley EAP</li>
-                            <li>Magellan</li>
-                            <li>MagnaCare</li>
-                            <li>MultiPlan</li>
-                            <li>OptimServe</li>
-                            <li>Three Rivers Provider Network</li>
-                            <li>Workforce Assistance</li>
-                        </ul>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="locations-full" class="locations-section bg-light-gray" aria-labelledby="all-locations-heading">
-            <div class="container">
-                <h2 id="all-locations-heading" class="text-center">Our Other Locations</h2>
-                <p class="text-center" style="margin-bottom: 2rem;">Sunrise Detox provides the same high standard of care at 8 other facilities nationwide.</p>
-                
-                <div class="all-locations-grid">
-                    
-                    <article id="fortlauderdale-card" class="location-card">
-                        <div class="location-card-image-wrapper">
-                            <img data-src="../../images/sdc_ftl.jpg" class="lazy-load" alt="Sunrise Detox Fort Lauderdale Facility" width="100%" height="100%" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                            <div class="location-card-header">Fort Lauderdale, FL</div>
-                        </div>
-                        <div class="location-card-content">
-                            <p>2331 NE 53rd St<br>Fort Lauderdale, FL 33308</p>
-                            <a href="[FT_LAUDERDALE_LOCATION_URL]" class="btn btn-primary location-card-cta">View Facility</a>
-                        </div>
-                    </article>
-
-                    <article id="duluth-card" class="location-card">
-                        <div class="location-card-image-wrapper">
-                            <img data-src="../../images/sdc_duluth.jpg" class="lazy-load" alt="Sunrise Detox Duluth Facility" width="100%" height="100%" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                            <div class="location-card-header">Duluth, GA</div>
-                        </div>
-                        <div class="location-card-content">
-                            <p>3390 N Berkeley Lake Rd NW Suite 100<br>Duluth, GA 30096</p>
-                            <a href="[DULUTH_LOCATION_URL]" class="btn btn-primary location-card-cta">View Facility</a>
-                        </div>
-                    </article>
-
-                    <article id="alpharetta-card" class="location-card">
-                        <div class="location-card-image-wrapper">
-                            <img data-src="../../images/sdc_alpha.jpg" class="lazy-load" alt="Sunrise Detox Alpharetta Facility" width="100%" height="100%" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                            <div class="location-card-header">Alpharetta, GA (Atlanta Area)</div>
-                        </div>
-                        <div class="location-card-content">
-                            <p>4500 North Point Pkwy<br>Alpharetta, GA 30022</p>
-                            <a href="[ALPHARETTA_LOCATION_URL]" class="btn btn-primary location-card-cta">View Facility</a>
-                        </div>
-                    </article>
-
-                </div>
             </div>
         </section>
         
@@ -865,7 +689,7 @@
     <footer>
         <div class="container">
             <p class="copyright">© <span id="current-year">2024</span> Praesum Healthcare. All Rights Reserved.</p>
-            <img src="../../images/Sunrise_Logo_white.png" alt="Sunrise Detox Full Logo" style="max-height: 50px; margin-top: 1rem;">
+            <img src="../../images/Sunrise_Logo_white.png" alt="Sunrise Detox Full Logo" style="max-height: 50px; margin-top: 1rem;" a href="index.html;">
 
             <div class="medical-disclaimer">
                 <h4>Medical Disclaimer</h4>
@@ -873,7 +697,7 @@
                     The content of this website is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Website text, graphics, videos, images, and other content are for informational purposes only. Never use the contents of this website as a substitute for the advice of a doctor. Always consult a physician if you have questions or concerns about health matters, including any drugs, supplements, maladies or remedies mentioned.
                 </p>
                 <p>
-                    Descriptions and reports on products or services mentioned on this website should not be considered endorsements nor recommendations. If you have a medical emergency, call 911 or a doctor immediately. If you have concerns about suicide, please call the National Hotline at 1-800-273-8255.
+                    Descriptions and reports on products or services mentioned on this website should not be considered endorsements nor recommendations. If you have a medical emergency, call 911 or a doctor immediately. If you have concerns about suicide, please call or text 988.
                 </p>
             </div>
             </div>

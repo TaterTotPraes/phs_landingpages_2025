@@ -31,9 +31,52 @@
       "longitude": "-84.266504",
       "gmb_link": "https://maps.app.goo.gl/VWmHd1VCWXNNtAKG7",
       "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.4485351909284!2d-84.26634639999999!3d34.0580145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59fd699e12a89%3A0x4039315f9808ada1!2sSunrise%20Detox%20-%20Alpharetta%20Drug%20%26%20Alcohol%20Detox!5e0!3m2!1sen!2sus!4v1762035479694!5m2!1sen!2sus",
-      "medicalSpecialty": ["AddictionMedicine"],
+      "medicalSpecialty": [
+        "AddictionMedicine"
+      ],
       "availableService": [
-        "Medical Detoxification", "Alcohol Detox", "Opiate Detox", "Heroin Detox", "Cocaine Detox", "Benzo Detox", "Substance Abuse Treatment"
+        "Medical Detoxification",
+        "Alcohol Detox",
+        "Opiate Detox",
+        "Heroin Detox",
+        "Cocaine Detox",
+        "Benzo Detox",
+        "Substance Abuse Treatment"
+      ],
+      "areasServed": {
+        "cities": [
+          "Alpharetta",
+          "Roswell",
+          "Johns Creek",
+          "Milton",
+          "Cumming",
+          "Peachtree Corners"
+        ],
+        "zips": [
+          "30022",
+          "30005",
+          "30004",
+          "30009",
+          "30023",
+          "30075",
+          "30076",
+          "30092"
+        ]
+      },
+      "insuranceList": [
+        "Ambetter",
+        "American Behavioral",
+        "Blue Cross Blue Shield (BCBS)",
+        "Beacon Health",
+        "Beacon Health Options/GHI",
+        "Cigna Connect",
+        "Delta Airlines",
+        "Humana",
+        "Lower Hudson Valley EAP",
+        "Magellan",
+        "MagnaCare",
+        "Managed Care Concepts",
+        "MultiPlan"
       ]
     },
     {
@@ -50,9 +93,39 @@
       "longitude": "-73.2416852",
       "gmb_link": "https://maps.app.goo.gl/LW1ZB6bgY9yPppEM6",
       "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.2427235543087!2d-73.2416805!3d40.7786777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e831cab0c990ef%3A0x810de066fa7b7aac!2sSunrise%20Detox%20-%20Long%20Island%20Drug%20%26%20Alcohol%20Detox!5e0!3m2!1sen!2sus!4v1762035490282!5m2!1sen!2sus",
-      "medicalSpecialty": ["AddictionMedicine"],
+      "medicalSpecialty": [
+        "AddictionMedicine"
+      ],
       "availableService": [
-        "Medical Detoxification", "Alcohol Detox", "Opiate Detox", "Heroin Detox", "Cocaine Detox", "Benzo Detox", "Substance Abuse Treatment"
+        "Medical Detoxification",
+        "Alcohol Detox",
+        "Opiate Detox",
+        "Heroin Detox",
+        "Cocaine Detox",
+        "Benzo Detox",
+        "Substance Abuse Treatment"
+      ],
+      "areasServed": {
+        "cities": [
+          "Brentwood",
+          "Babylon",
+          "Bay Shore",
+          "Central Islip",
+          "Islip",
+          "Huntington"
+        ],
+        "zips": [
+          "11717",
+          "11702",
+          "11706",
+          "11722",
+          "11751",
+          "11743"
+        ]
+      },
+      "insuranceList": [
+        "Aetna",
+        "Magellan"
       ]
     },
     {
@@ -69,9 +142,56 @@
       "longitude": "-75.017549",
       "gmb_link": "https://maps.app.goo.gl/WEXM8vymRWYyzayv5",
       "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.228571167015!2d-75.0154806!3d39.8915145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6cc7c5463ff25%3A0x559fb60afd204b03!2sSunrise%20Detox%20-%20Cherry%20Hill%20Drug%20%26%20Alcohol%20Detox!5e0!3m2!1sen!2sus!4v1762035500937!5m2!1sen!2sus",
-      "medicalSpecialty": ["AddictionMedicine"],
+      "medicalSpecialty": [
+        "AddictionMedicine"
+      ],
       "availableService": [
-        "Medical Detoxification", "Alcohol Detox", "Opiate Detox", "Heroin Detox", "Cocaine Detox", "Benzo Detox", "Substance Abuse Treatment"
+        "Medical Detoxification",
+        "Alcohol Detox",
+        "Opiate Detox",
+        "Heroin Detox",
+        "Cocaine Detox",
+        "Benzo Detox",
+        "Substance Abuse Treatment"
+      ],
+      "areasServed": {
+        "cities": [
+          "Cherry Hill",
+          "Camden",
+          "Pennsauken",
+          "Collingswood",
+          "Mount Laurel",
+          "Marlton",
+          "Haddonfield"
+        ],
+        "zips": [
+          "08034",
+          "08002",
+          "08003",
+          "08102",
+          "08103",
+          "08110",
+          "08108",
+          "08054",
+          "08053",
+          "08033"
+        ]
+      },
+      "insuranceList": [
+        "Allied Trades",
+        "American Behavioral",
+        "AmeriHealth",
+        "Blue Cross Blue Shield (BCBS)",
+        "Health Smart",
+        "Horizon BCBS",
+        "Humana",
+        "Independence BCBS",
+        "Lower Hudson Valley EAP",
+        "Magellan",
+        "MagnaCare",
+        "MultiPlan",
+        "Three Rivers Provider Network",
+        "Workforce Assistance"
       ]
     },
     {
@@ -88,9 +208,47 @@
       "longitude": "-84.16979",
       "gmb_link": "https://maps.app.goo.gl/dT6LAqXatTfW8BHx7",
       "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.28101546998!2d-84.16977759999999!3d33.985315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a3fce94d1a4d%3A0xb8d8ad38aac5dc8d!2sSunrise%20Detox%20-%20Duluth%20Drug%20%26%20Alcohol%20Detox!5e0!3m2!1sen!2sus!4v1762035511468!5m2!1sen!2sus",
-      "medicalSpecialty": ["AddictionMedicine"],
+      "medicalSpecialty": [
+        "AddictionMedicine"
+      ],
       "availableService": [
-        "Medical Detoxification", "Alcohol Detox", "Opiate Detox", "Heroin Detox", "Cocaine Detox", "Benzo Detox", "Substance Abuse Treatment"
+        "Medical Detoxification",
+        "Alcohol Detox",
+        "Opiate Detox",
+        "Heroin Detox",
+        "Cocaine Detox",
+        "Benzo Detox",
+        "Substance Abuse Treatment"
+      ],
+      "areasServed": {
+        "cities": [
+          "Duluth",
+          "Johns Creek",
+          "Peachtree Corners",
+          "Suwanee",
+          "Norcross",
+          "Berkeley Lake",
+          "Alpharetta",
+          "Roswell"
+        ],
+        "zips": [
+          "30096",
+          "30097",
+          "30095",
+          "30024",
+          "30071",
+          "30092",
+          "30022",
+          "30004",
+          "30005",
+          "30009",
+          "30075",
+          "30076"
+        ]
+      },
+      "insuranceList": [
+        "Ambetter",
+        "Cigna Connect"
       ]
     },
     {
@@ -107,9 +265,59 @@
       "longitude": "-80.11532355",
       "gmb_link": "https://maps.app.goo.gl/wu42k5Fw1GrB6Ee16",
       "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.151962539325!2d-80.11442559999999!3d26.1917345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9021aaaaaaaab%3A0xf3032f0ec3ff206a!2sSunrise%20Detox%20-%20Ft%20Lauderdale%20Drug%20%26%20Alcohol%20Detox!5e0!3m2!1sen!2sus!4v1762035524254!5m2!1sen!2sus",
-      "medicalSpecialty": ["AddictionMedicine"],
+      "medicalSpecialty": [
+        "AddictionMedicine"
+      ],
       "availableService": [
-        "Medical Detoxification", "Alcohol Detox", "Opiate Detox", "Heroin Detox", "Cocaine Detox", "Benzo Detox", "Substance Abuse Treatment"
+        "Medical Detoxification",
+        "Alcohol Detox",
+        "Opiate Detox",
+        "Heroin Detox",
+        "Cocaine Detox",
+        "Benzo Detox",
+        "Substance Abuse Treatment"
+      ],
+      "areasServed": {
+        "cities": [
+          "Fort Lauderdale",
+          "Hollywood",
+          "Pompano Beach",
+          "Boca Raton",
+          "Coral Springs",
+          "Sunrise",
+          "Plantation",
+          "Miramar",
+          "West Palm Beach"
+        ],
+        "zips": [
+          "33308",
+          "33301",
+          "33304",
+          "33019",
+          "33060",
+          "33431",
+          "33065",
+          "33322",
+          "33317",
+          "33025",
+          "33401"
+        ]
+      },
+      "insuranceList": [
+        "Aetna",
+        "Allied Trades",
+        "American Behavioral",
+        "Beacon Health Options/Value Options",
+        "Beech Street",
+        "Health Smart",
+        "Lower Hudson Valley EAP",
+        "Magellan",
+        "MagnaCare",
+        "Managed Care Concepts",
+        "MultiPlan",
+        "Three Rivers Provider Network",
+        "Value Options",
+        "Workforce Assistance"
       ]
     },
     {
@@ -126,9 +334,60 @@
       "longitude": "-80.075558",
       "gmb_link": "https://maps.app.goo.gl/JndhrcDxkE8ZDnX4A",
       "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3566.60549064602!2d-80.07583079999999!3d26.629089399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d8227f1dbb19%3A0x2577845283312f0e!2sSunrise%20Detox%20-%20Palm%20Beach%20Drug%20%26%20Alcohol%20Detox!5e0!3m2!1sen!2sus!4v1762035562957!5m2!1sen!2sus",
-      "medicalSpecialty": ["AddictionMedicine"],
+      "medicalSpecialty": [
+        "AddictionMedicine"
+      ],
       "availableService": [
-        "Medical Detoxification", "Alcohol Detox", "Opiate Detox", "Heroin Detox", "Cocaine Detox", "Benzo Detox", "Substance Abuse Treatment"
+        "Medical Detoxification",
+        "Alcohol Detox",
+        "Opiate Detox",
+        "Heroin Detox",
+        "Cocaine Detox",
+        "Benzo Detox",
+        "Substance Abuse Treatment"
+      ],
+      "areasServed": {
+        "cities": [
+          "Lake Worth",
+          "Lake Worth Beach",
+          "Boynton Beach",
+          "Delray Beach",
+          "Boca Raton",
+          "Palm Springs",
+          "Greenacres",
+          "West Palm Beach"
+        ],
+        "zips": [
+          "33461",
+          "33460",
+          "33435",
+          "33444",
+          "33431",
+          "33406",
+          "33463",
+          "33401"
+        ]
+      },
+      "insuranceList": [
+        "Aetna",
+        "Allied Trades",
+        "Ambetter",
+        "American Behavioral",
+        "APA",
+        "Beacon Health Options/Value Options",
+        "Beech Street",
+        "First Health",
+        "Health Smart",
+        "Humana",
+        "Lower Hudson Valley EAP",
+        "Magellan",
+        "MagnaCare",
+        "Managed Health Network (MHN)",
+        "Memorial Integrated Health Care",
+        "MultiPlan",
+        "Three Rivers Provider Network",
+        "Value Options",
+        "Workforce Assistance"
       ]
     },
     {
@@ -145,9 +404,54 @@
       "longitude": "-71.76188758",
       "gmb_link": "https://maps.app.goo.gl/KMLigMCBxVhfc3f79",
       "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.993480452876!2d-71.76161619999999!3d42.1932069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e40f5e030c0c67%3A0x5e304717a6da63ef!2sSunrise%20Detox%20-%20Millbury%20Drug%20%26%20Alcohol%20Detox!5e0!3m2!1sen!2sus!4v1762035575455!5m2!1sen!2sus",
-      "medicalSpecialty": ["AddictionMedicine"],
+      "medicalSpecialty": [
+        "AddictionMedicine"
+      ],
       "availableService": [
-        "Medical Detoxification", "Alcohol Detox", "Opiate Detox", "Heroin Detox", "Cocaine Detox", "Benzo Detox", "Substance Abuse Treatment"
+        "Medical Detoxification",
+        "Alcohol Detox",
+        "Opiate Detox",
+        "Heroin Detox",
+        "Cocaine Detox",
+        "Benzo Detox",
+        "Substance Abuse Treatment"
+      ],
+      "areasServed": {
+        "cities": [
+          "Millbury",
+          "Worcester",
+          "Auburn",
+          "Grafton",
+          "Sutton",
+          "Shrewsbury",
+          "Leicester"
+        ],
+        "zips": [
+          "01527",
+          "01602",
+          "01603",
+          "01604",
+          "01605",
+          "01606",
+          "01501",
+          "01519",
+          "01590",
+          "01545",
+          "01524"
+        ]
+      },
+      "insuranceList": [
+        "Aetna",
+        "BCBS MA",
+        "HMC Healthworks",
+        "Harvard Pilgrim/Point 32",
+        "Humana",
+        "Lower Hudson Valley EAP",
+        "Magellan",
+        "OptumServe",
+        "Tricare (Humana Military)",
+        "Tufts",
+        "Workforce Assistance"
       ]
     },
     {
@@ -163,10 +467,56 @@
       "latitude": "28.451773",
       "longitude": "-81.416137",
       "gmb_link": "https://maps.app.goo.gl/vS87WZP8NXVeUSt98",
-      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.9220498116792!2d-81.4155888!3d28.4517661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77c326119919b%3A0x15884ff7dc2c568a!2sSunrise%20Detox%20-%20Orlando%20Drug%20%26%20Alcohol%20Detox!5e0!3m2!1sen!2sus!4v1762035585941!5m2!1sen!2sus",
-      "medicalSpecialty": ["AddictionMedicine"],
+      "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.4485351909284!2d-84.26634639999999!3d34.0580145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59fd699e12a89%3A0x4039315f9808ada1!2sSunrise%20Detox%20-%20Alpharetta%20Drug%20%26%20Alcohol%20Detox!5e0!3m2!1sen!2sus!4v1762035479694!5m2!1sen!2susS",
+      "medicalSpecialty": [
+        "AddictionMedicine"
+      ],
       "availableService": [
-        "Medical Detoxification", "Alcohol Detox", "Opiate Detox", "Heroin Detox", "Cocaine Detox", "Benzo Detox", "Substance Abuse Treatment"
+        "Medical Detoxification",
+        "Alcohol Detox",
+        "Opiate Detox",
+        "Heroin Detox",
+        "Cocaine Detox",
+        "Benzo Detox",
+        "Substance Abuse Treatment"
+      ],
+      "areasServed": {
+        "cities": [
+          "Orlando",
+          "Kissimmee",
+          "Winter Park",
+          "Sanford",
+          "Lake Buena Vista",
+          "Ocoee",
+          "Altamonte Springs",
+          "Apopka"
+        ],
+        "zips": [
+          "32809",
+          "34741",
+          "34744",
+          "32789",
+          "32792",
+          "32771",
+          "32830",
+          "34746",
+          "32703",
+          "32714"
+        ]
+      },
+      "insuranceList": [
+        "Aetna",
+        "Ambetter",
+        "American Behavioral",
+        "Beacon Health Options/GHI Network",
+        "Humana",
+        "Lower Hudson Valley EAP",
+        "Magellan",
+        "MagnaCare",
+        "MultiPlan",
+        "OptimServe",
+        "Three Rivers Provider Network",
+        "Workforce Assistance"
       ]
     },
     {
@@ -183,9 +533,57 @@
       "longitude": "-74.21030985",
       "gmb_link": "https://maps.app.goo.gl/Zv39CXcjpkhpk66E7",
       "gmb_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.143409257939!2d-74.21120739999999!3d39.982900400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c19d85be25d0d9%3A0x143dc7764d3dad90!2sSunrise%20Detox%20-%20Toms%20River%20Drug%20%26%20Alcohol%20Detox!5e0!3m2!1sen!2sus!4v1762035599206!5m2!1sen!2sus",
-      "medicalSpecialty": ["AddictionMedicine"],
+      "medicalSpecialty": [
+        "AddictionMedicine"
+      ],
       "availableService": [
-        "Medical Detoxification", "Alcohol Detox", "Opiate Detox", "Heroin Detox", "Cocaine Detox", "Benzo Detox", "Substance Abuse Treatment"
+        "Medical Detoxification",
+        "Alcohol Detox",
+        "Opiate Detox",
+        "Heroin Detox",
+        "Cocaine Detox",
+        "Benzo Detox",
+        "Substance Abuse Treatment"
+      ],
+      "areasServed": {
+        "cities": [
+          "Toms River",
+          "Brick",
+          "Lakewood",
+          "Seaside Heights",
+          "Barnegat",
+          "Point Pleasant"
+        ],
+        "zips": [
+          "08753",
+          "08754",
+          "08755",
+          "08756",
+          "08757",
+          "08723",
+          "08724",
+          "08701",
+          "08751",
+          "08005",
+          "08742"
+        ]
+      },
+      "insuranceList": [
+        "Aetna",
+        "Allied Trades",
+        "American Behavioral",
+        "AmeriHealth",
+        "Blue Cross Blue Shield (BCBS)",
+        "Health Smart",
+        "Horizon BCBS",
+        "Humana",
+        "Lower Hudson Valley EAP",
+        "Magellan",
+        "MagnaCare",
+        "MultiPlan",
+        "OptumServe",
+        "Three Rivers Provider Network",
+        "Workforce Assistance"
       ]
     }
   ]

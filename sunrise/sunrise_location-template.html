@@ -11,13 +11,12 @@
     <meta name="robots" content="noindex, nofollow">
 
     <link rel="canonical" href="[LOCATION_URL]">
-    
+    <link rel="icon" type="image/png" href="images/Sunrise_Logo.png">
     <meta property="og:title" content="[LOCATION_NAME] | [LOCATION_PHONE]">
     <meta property="og:description" content="24/7 medical detox in [LOCATION_CITY]. Confidential help available now.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="[LOCATION_URL]">
     <meta property="og:image" content="[LOCATION_IMAGE_URL]">
-    <link rel="icon" type="image/png" href="images/sunrisedetoxlogo-favicon.png"> 
 
     <script type="text/javascript" src="https://services.legitscript.com/api/token.js" data-token="YOUR_UNIQUE_LEGITSCRIPT_TOKEN" data-name="platform-verification"></script>
 
@@ -329,7 +328,7 @@
             overflow: hidden;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            margin-top: 3rem; /* NEW: Added margin to separate from grid */
+            margin-top: 3rem; /* Matched Evolve template */
         }
         .map-embed-wrapper iframe {
             position: absolute;
@@ -339,7 +338,6 @@
             height: 100%;
             border: 0;
         }
-        /* NEW: Areas Served List Styles */
         .areas-served-list {
             list-style: none;
             padding: 0;
@@ -396,7 +394,7 @@
                 gap: 1rem;
             }
             .map-embed-wrapper {
-                height: 500px; /* Removed min-height, set fixed height */
+                height: 500px;
             }
             .location-insurance-grid {
                 display: grid; /* NEW: Use grid for this */
@@ -461,9 +459,9 @@
     <header>
         <div class="nav-content container">
             <div class="logo">
-                <a href="https://www.sunrisedetox.com/" aria-label="Sunrise Detox Homepage">
+                <a href="index.html" aria-label="Sunrise Detox Homepage">
                     <img src="images/Sunrise_Logo_white.png" alt="Sunrise Detox Logo Icon">
-                    <span style="margin-left: 0.5rem;">SUNRISE DETOX</span>
+    
                 </a> 
             </div>
             
@@ -472,9 +470,9 @@
             </a>
             
             <nav class="nav-menu" aria-label="Site Navigation">
-                <a href="https://www.sunrisedetox.com/#locations-full">Our Locations</a>
-                <a href="https://www.sunrisedetox.com/#insurance">Insurance Accepted</a>
-                <a href="https://www.sunrisedetox.com/#treatment-planning">Treatment Planning</a>
+                <a href="index.html#locations-full">Our Locations</a>
+                <a href="#insurance">Insurance Accepted</a>
+                <a href="tel:8669894252" class="btn btn-primary gtm-track-call" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-left: 1rem; vertical-align: middle;">Call 866-989-4252</a>
             </nav>
             
             <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation-menu" aria-label="Toggle navigation">
@@ -489,6 +487,7 @@
 
         <section class="hero" aria-label="[LOCATION_NAME] Detox Care">
             <div class="hero-background" style="background-image: url('[LOCATION_IMAGE_URL]');"></div>
+        
             <div class="container hero-grid">
                 
                 <div class="hero-content-wrapper"> 
@@ -519,7 +518,7 @@
         <section id="location-details" class="section-padded bg-light-gray" aria-labelledby="location-details-heading">
             <div class="container">
                 
-                <div class="contact-grid location-insurance-grid"> 
+                <div class="location-insurance-grid"> 
                     
                     <div class="location-info-wrapper">
                         <h2 id="location-details-heading">Visit Our [LOCATION_CITY] Facility</h2>
@@ -554,7 +553,7 @@
                         </div>
                         </div>
 
-                    <div class="location-insurance-wrapper">
+                    <div id="insurance" class="location-insurance-wrapper">
                         <h2 style="margin-bottom: 1rem;">Insurance Accepted at [LOCATION_NAME]</h2>
                         <p>
                             We are in-network with most insurance plans. Call <a href="tel:866-750-8588" class="gtm-track-call" style="font-weight: 700;">866-750-8588</a> for a free, immediate insurance verification.
@@ -563,8 +562,8 @@
                         <div class="insurance-grid">
                             <article class="insurance-card">
                                 <h4>Sunrise Detox [LOCATION_CITY], [LOCATION_STATE]</h4>
-                                <ul>
-                                    [INSURANCE_LIST]
+                                <ul class="insurance-card-list">
+                                    [INSURANCE_LIST_HTML]
                                 </ul>
                             </article>
                         </div>
@@ -663,7 +662,7 @@
     <footer>
         <div class="container">
             <p class="copyright">© <span id="current-year">2024</span> Praesum Healthcare. All Rights Reserved.</p>
-            <img src="images/Sunrise_Logo_white.png" alt="Sunrise Detox Full Logo" style="max-height: 50px; margin-top: 1rem;">
+            <img src="images/Sunrise_Logo_white.png" alt="Sunrise Detox Full Logo" style="max-height: 50px; margin-top: 1rem;" a href="index.html;">
 
             <div class="medical-disclaimer">
                 <h4>Medical Disclaimer</h4>
@@ -671,7 +670,7 @@
                     The content of this website is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Website text, graphics, videos, images, and other content are for informational purposes only. Never use the contents of this website as a substitute for the advice of a doctor. Always consult a physician if you have questions or concerns about health matters, including any drugs, supplements, maladies or remedies mentioned.
                 </p>
                 <p>
-                    Descriptions and reports on products or services mentioned on this website should not be considered endorsements nor recommendations. If you have a medical emergency, call 911 or a doctor immediately. If you have concerns about suicide, please call the National Hotline at 1-800-273-8255.
+                    Descriptions and reports on products or services mentioned on this website should not be considered endorsements nor recommendations. If you have a medical emergency, call 911 or a doctor immediately. If you have concerns about suicide, please call or text 988.
                 </p>
             </div>
             </div>

@@ -6,7 +6,8 @@ const path = require('path');
 
 // Define file paths
 const DATA_FILE = path.join(__dirname, 'tcc-data.json');
-const LOCATION_TEMPLATE_FILE = path.join(__dirname, 'location-template.html');
+// UPDATED FILE PATH:
+const LOCATION_TEMPLATE_FILE = path.join(__dirname, 'tcc_location-template.html');
 const HOME_TEMPLATE_FILE = path.join(__dirname, 'index.html');
 const OUTPUT_DIR = path.join(__dirname, 'dist');
 const LOCATION_OUTPUT_DIR = path.join(OUTPUT_DIR, 'locations');
@@ -52,6 +53,9 @@ function createLocationCard(loc) {
 
 // --- Helper Function to build HTML lists ---
 function buildHtmlList(items) {
+    if (!items || items.length === 0) {
+        return ''; // Return empty string if no items
+    }
     return items.map(item => `<li>${item}</li>`).join('\n');
 }
 
@@ -100,8 +104,8 @@ function buildSite() {
         const relativeAssetPath = '../../'; 
 
         // Build dynamic lists for this location
-        const citiesListHtml = buildHtmlList(loc.areasServed.cities);
-        const zipsListHtml = buildHtmlList(loc.areasServed.zips);
+        const citiesListHtml = (loc.areasServed && loc.areasServed.cities) ? buildHtmlList(loc.areasServed.cities) : '';
+        const zipsListHtml = (loc.areasServed && loc.areasServed.zips) ? buildHtmlList(loc.areasServed.zips) : '';
 
         // Find and replace all placeholders
         locationHtml = locationHtml.replace(/\[LOCATION_NAME\]/g, loc.name);
@@ -130,12 +134,34 @@ function buildSite() {
         locationHtml = locationHtml.replace(/src="images\//g, `src="${relativeAssetPath}images/`);
         locationHtml = locationHtml.replace(/url\('images\//g, `url('${relativeAssetPath}images/`);
         
-        // Fix homepage links
-        locationHtml = locationHtml.replace(/href="https\:\/\/www.thecounselingcenter.com\/"/g, relativeAssetPath);
-        locationHtml = locationHtml.replace(/href="https\:\/\/www.thecounselingcenter.com\/#admissions"/g, `${relativeAssetPath}#admissions`);
-        locationHtml = locationHtml.replace(/href="https.../g, `${relativeAssetPath}#services`);
-        locationHtml = locationHtml.replace(/href="https\:\/\/www.thecounselingcenter.com\/#locations-full"/g, `${relativeAssetPath}#locations-full`);
-        locationHtml = locationHtml.replace(/href="https.../g, `${relativeAssetPath}#contact`);
+        // --- UPDATED HOMEPAGE LINK LOGIC (for relative testing) ---
+        // This finds the relative links from your template and prepends the asset path
+        
+        // Handle nav links (must be replaced first)
+        locationHtml = locationHtml.replace(
+            /href="#admissions"/g, 
+            `href="${relativeAssetPath}index.html#admissions"`
+        );
+        locationHtml = locationHtml.replace(
+            /href="#services"/g, 
+            `href="${relativeAssetPath}index.html#services"`
+        );
+        locationHtml = locationHtml.replace(
+            /href="#locations-full"/g, 
+            `href="${relativeAssetPath}index.html#locations-full"`
+        );
+        locationHtml = locationHtml.replace(
+            /href="#contact"/g, 
+            `href="${relativeAssetPath}index.html#contact"`
+        );
+
+        // Handle logo/home link (assuming it links to "index.html")
+        locationHtml = locationHtml.replace(
+            /href="index.html"/g, 
+            `href="${relativeAssetPath}index.html"`
+        );
+        // --- END of link logic update ---
+
 
         // Create the folder for the location
         const locationSlug = loc.url.split('/').pop();

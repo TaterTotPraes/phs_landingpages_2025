@@ -6,7 +6,8 @@ const path = require('path');
 
 // Define file paths
 const DATA_FILE = path.join(__dirname, 'sunrise-data.json');
-const LOCATION_TEMPLATE_FILE = path.join(__dirname, 'location-template.html');
+// UPDATED FILE PATH:
+const LOCATION_TEMPLATE_FILE = path.join(__dirname, 'sunrise_location-template.html');
 const HOME_TEMPLATE_FILE = path.join(__dirname, 'index.html');
 const OUTPUT_DIR = path.join(__dirname, 'dist');
 const LOCATION_OUTPUT_DIR = path.join(OUTPUT_DIR, 'locations');
@@ -70,6 +71,48 @@ function buildSite() {
         locationHtml = locationHtml.replace(/\[LOCATION_GMB_URL\]/g, loc.gmb_link);
         locationHtml = locationHtml.replace(/\[LOCATION_GMB_EMBED_URL\]/g, loc.gmb_embed_url);
         
+        // --- NEW CODE for Areas Served ---
+
+        // 1. Generate HTML for Areas Served Cities
+        let citiesHtml = ''; // Default to empty string
+        if (loc.areasServed && loc.areasServed.cities) {
+            citiesHtml = loc.areasServed.cities
+                .map(city => `<li>${city}</li>`)
+                .join('\n');
+        }
+
+        // 2. Generate HTML for Areas Served Zips
+        let zipsHtml = ''; // Default to empty string
+        if (loc.areasServed && loc.areasServed.zips) {
+            zipsHtml = loc.areasServed.zips
+                .map(zip => `<li>${zip}</li>`)
+                .join('\n');
+        }
+
+        // 3. Replace the placeholders
+        locationHtml = locationHtml.replace('[AREAS_SERVED_CITIES_LIST]', citiesHtml);
+        locationHtml = locationHtml.replace('[AREAS_SERVED_ZIPS_LIST]', zipsHtml);
+
+        // --- END of Areas Served code ---
+        
+        // --- NEW CODE for Insurance List ---
+
+        // 1. Generate HTML for Insurance List
+        let insuranceHtml = ''; // Default to empty string
+        if (loc.insuranceList && loc.insuranceList.length > 0) {
+            insuranceHtml = loc.insuranceList
+                .map(insurer => `<li>${insurer}</li>`)
+                .join('\n');
+        } else {
+            // Optional: What to show if the list is empty
+            insuranceHtml = '<li>Please call for insurance verification.</li>';
+        }
+
+        // 2. Replace the placeholder
+        locationHtml = locationHtml.replace('[INSURANCE_LIST_HTML]', insuranceHtml);
+
+        // --- END of Insurance List code ---
+        
         // Fix asset paths (images, css, js) so they work from a subfolder
         locationHtml = locationHtml.replace(/href="style.css"/g, `href="${relativeAssetPath}style.css"`);
         locationHtml = locationHtml.replace(/src="script.js"/g, `src="${relativeAssetPath}script.js"`); 
@@ -77,11 +120,27 @@ function buildSite() {
         locationHtml = locationHtml.replace(/src="images\//g, `src="${relativeAssetPath}images/`);
         locationHtml = locationHtml.replace(/url\('images\//g, `url('${relativeAssetPath}images/`);
         
-        // Fix homepage links
-        locationHtml = locationHtml.replace(/href="https\:\/\/www.sunrisedetox.com\/"/g, relativeAssetPath);
-        locationHtml = locationHtml.replace(/href="https\:\/\/www.sunrisedetox.com\/#locations-full"/g, `${relativeAssetPath}#locations-full`);
-        locationHtml = locationHtml.replace(/href="https\:\/\/www.sunrisedetox.com\/#insurance"/g, `${relativeAssetPath}#insurance`);
-        locationHtml = locationHtml.replace(/href="https\:\/\/www.sunrisedetox.com\/#treatment-planning"/g, `${relativeAssetPath}#treatment-planning`);
+        
+        // --- UPDATED HOMEPAGE LINK LOGIC ---
+        // This finds the relative links from your template and prepends the asset path
+        // to make them work correctly from within the /locations/ folder.
+        
+        // We must replace more-specific links first to avoid partial replacement
+        locationHtml = locationHtml.replace(
+            /href="index.html#locations-full"/g, 
+            `href="${relativeAssetPath}index.html#locations-full"`
+        );
+        locationHtml = locationHtml.replace(
+            /href="#insurance"/g, 
+            `href="${relativeAssetPath}index.html#insurance"`
+        );
+        // This line assumes your logo/homepage link is "index.html". Add others if needed.
+        locationHtml = locationHtml.replace(
+            /href="index.html"/g, 
+            `href="${relativeAssetPath}index.html"`
+        );
+        // --- END of link logic update ---
+
 
         // Create the folder for the location (e.g., /locations/alpharetta_georgia/)
         const locationSlug = loc.url.split('/').pop();

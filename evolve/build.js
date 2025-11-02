@@ -6,7 +6,8 @@ const path = require('path');
 
 // Define file paths
 const DATA_FILE = path.join(__dirname, 'evolve-data.json');
-const LOCATION_TEMPLATE_FILE = path.join(__dirname, 'location-template.html');
+// UPDATED FILE PATH:
+const LOCATION_TEMPLATE_FILE = path.join(__dirname, 'evolve_location-template.html');
 const HOME_TEMPLATE_FILE = path.join(__dirname, 'index.html');
 const OUTPUT_DIR = path.join(__dirname, 'dist');
 const LOCATION_OUTPUT_DIR = path.join(OUTPUT_DIR, 'locations');
@@ -24,7 +25,6 @@ function createLocationCard(loc) {
             <div class="location-card-header">${loc.name.replace('Evolve Recovery Center at ', '')}</div>
         </div>
         <div class="location-card-content">
-            <!-- Evolve homepage cards link to location pages now -->
             <a href="locations/${slug}/" class="btn btn-primary location-card-cta">View Location Page</a>
         </div>
     </article>
@@ -33,7 +33,10 @@ function createLocationCard(loc) {
 
 // --- Helper Function to build HTML lists ---
 function buildHtmlList(items) {
-    if (!items) return '';
+    if (!items || items.length === 0) {
+        // Return a default message if the list is empty
+        return '<li>Please call for insurance verification.</li>';
+    }
     return items.map(item => `<li>${item}</li>`).join('\n');
 }
 
@@ -61,8 +64,9 @@ function buildSite() {
         const relativeAssetPath = '../../'; 
 
         // --- Build dynamic lists ---
-        const citiesListHtml = buildHtmlList(loc.areasServed.cities);
-        const zipsListHtml = buildHtmlList(loc.areasServed.zips);
+        // Handle potentially missing areasServed object
+        const citiesListHtml = (loc.areasServed && loc.areasServed.cities) ? buildHtmlList(loc.areasServed.cities) : '';
+        const zipsListHtml = (loc.areasServed && loc.areasServed.zips) ? buildHtmlList(loc.areasServed.zips) : '';
         const insuranceListHtml = buildHtmlList(loc.insuranceList);
 
         // Find and replace all placeholders
@@ -92,11 +96,35 @@ function buildSite() {
         locationHtml = locationHtml.replace(/src="images\//g, `src="${relativeAssetPath}images/`);
         locationHtml = locationHtml.replace(/url\('images\//g, `url('${relativeAssetPath}images/`);
         
-        // Fix homepage links
-        locationHtml = locationHtml.replace(/href="https\:\/\/www.evolverecoverycenter.com\/"/g, relativeAssetPath);
-        locationHtml = locationHtml.replace(/href="https\:\/\/www.evolverecoverycenter.com\/#locations-full"/g, `${relativeAssetPath}#locations-full`);
-        locationHtml = locationHtml.replace(/href="https\:\/\/www.evolverecoverycenter.com\/#insurance"/g, `${relativeAssetPath}#insurance`);
-        locationHtml = locationHtml.replace(/href="https\:\/\/www.evolverecoverycenter.com\/#treatment-planning"/g, `${relativeAssetPath}#treatment-planning`);
+        // --- UPDATED HOMEPAGE LINK LOGIC (for relative testing) ---
+        // This finds the relative links from your template and prepends the asset path
+        
+        // Handle logo link
+        locationHtml = locationHtml.replace(
+            /href="#top"/g, 
+            `href="${relativeAssetPath}index.html"`
+        );
+
+        // Handle nav links
+        locationHtml = locationHtml.replace(
+            /href="#locations-full"/g, 
+            `href="${relativeAssetPath}index.html#locations-full"`
+        );
+        locationHtml = locationHtml.replace(
+            /href="#insurance"/g, 
+            `href="${relativeAssetPath}index.html#insurance"`
+        );
+        locationHtml = locationHtml.replace(
+            /href="#treatment-planning"/g, 
+            `href="${relativeAssetPath}index.html#treatment-planning"`
+        );
+
+        // Handle any other root-relative links
+        locationHtml = locationHtml.replace(
+            /href="index.html"/g, 
+            `href="${relativeAssetPath}index.html"`
+        );
+        // --- END of link logic update ---
 
         // Create the folder for the location
         const locationSlug = loc.url.split('/').pop();
